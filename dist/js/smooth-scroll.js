@@ -25,7 +25,7 @@
 		// Speed & Easing
 		speed: 4000,
 		clip: true,
-		offset: 120,
+		offset: 90,
 		easing: 'easeInOutCubic',
 		customEasing: null,
 
