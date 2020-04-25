@@ -173,7 +173,7 @@ img {
   border-radius: 25px;
 }
 
-.active {
+li .active {
   background-color: #0277bd;
   border-radius: 25px;
   border-bottom: 4px solid #ffffff;
