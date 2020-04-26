@@ -24,7 +24,7 @@
 
     <!-- Encabezado -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-4">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-4">
             <div class="container-fluid">
                 <a class="navbar-brand w-50" href="#">
                     <img src="dist/img/Logo/lionsdevstudio-white.png" alt="" srcset="" class="navbar__img">
@@ -37,16 +37,16 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mb-5 mb-md-0">
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme-2" href="#servicios">Servicios</a>
+                            <a data-scroll class="nav-link btn btn-theme" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme-2" href="#portafolio">Portafolio</a>
+                            <a data-scroll class="nav-link btn btn-theme" href="#portafolio">Portafolio</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme-2" href="#blog">Blog</a>
+                            <a data-scroll class="nav-link btn btn-theme" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme-yellow text-dark" href="#contacto">Contacto</a>
+                            <a data-scroll class="nav-link btn btn--yellow text-dark" href="#contacto">Contacto</a>
                         </li>
 
                     </ul>
@@ -60,26 +60,32 @@
 
         <!-- Welcome -->
         <section class="welcome">
-            <!-- Titulo -->
-            <div class="welcome__container w-75 mx-auto py-6">
 
-                <h1 class="text-center pb-2"> Lionsdevstudio</h1>
-                <h2 class="text-center pb-2 font-weight-bold mb-5">
-                    Diseño & Desarrollo Web
-                </h2>
-                
-                <!-- Botones -->
-                <ul class="w-100 mt-2 mb-5 text-center d-flex mx-auto justify-content-center">
-                    <a data-scroll href="#servicios" class="btn btn-theme-2">Servicios</a>   
-                    <a data-scroll href="#contacto" class="btn btn-theme-yellow">Contacto</a>
-                </ul>
-                <!-- Botones -->
+            <!-- Titulo -->
+            <div class="welcome__title">
+                <div class="welcome-view view flex-center flex-column">
+                    <img src="dist/img/imagenes/c2.jpg" class="welcome-img" alt="" srcset="">
+                    <div class="welcome__mask mask rgba-black-strong flex-center flex-column">
+                        <h1 class="welcome__h1 text-center pb-2 white-text"> Lionsdevstudio</h1>
+                        <h2 class="welcome__h2 text-center pb-2 mb-2 mb-md-5 white-text">
+                            Diseño & Desarrollo Web
+                        </h2>
+                        
+                        <!-- Botones -->
+                        <ul class="welcome__buttons mt-3 mt-md-2 mb-5 mb-md-5 text-center">
+                            <a data-scroll href="#servicios" class="btn btn--primary border--light white-text">Servicios</a>
+                            <a data-scroll href="#nosotros" class="btn btn--secondary border--light white-text">Nosotros</a>
+                            <a data-scroll href="#contacto" class="btn btn--yellow border--light dark-text">Contacto</a>
+                        </ul>
+                        <!-- Botones -->
+                    </div>
+                </div>
                 
             </div>
             <!-- Titulo -->
 
             <!-- Welcome Text -->
-            <div class="welcome__text p-5 bg-dark white-text">
+            <div class="welcome__text p-5 bg-theme--primary white-text">
                 <p class="lead text-justify pb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, explicabo maxime corrupti tenetur
                     officia
@@ -140,7 +146,7 @@
                                         src="dist/img/imagenes/blur-cellphone-close-up-device.jpg">
                                     <div class="mask p-4 flex-center flex-column rgba-black-strong">
                                         <h3 class="card-title py-5">Diseño Web</h3>
-                                        <a href="#" class="btn btn-theme-yellow"><span>Mas Información</span><i
+                                        <a href="#" class="btn btn--yellow border--dark text-dark"><span>Mas Información</span><i
                                                 class="fas fa-search ml-2"></i></a>
                                     </div>
                                 </div>
@@ -153,7 +159,7 @@
                                     <img class="d-block w-100" src="dist/img/imagenes/coding-computer.jpg">
                                     <div class="mask p-4 flex-center flex-column rgba-black-strong">
                                         <h3 class="card-title py-5">Desarrollo Web</h3>
-                                        <a href="#" class="btn btn-theme-yellow"><span>Mas Información</span><i
+                                        <a href="#" class="btn btn--yellow border--dark text-dark"><span>Mas Información</span><i
                                                 class="fas fa-search ml-2"></i></a>
                                     </div>
                                 </div>
@@ -167,9 +173,9 @@
         <!-- Servicios -->
 
         <!-- Team -->
-        <section class="team-section text-center py-5">
+        <section id="nosotros" class="team-section text-center py-5">
             <div class="w-75 mx-auto">
-                <h2 class="display-5">Quienes Somos</h2>
+                <h2 class="display-5 color-theme--primary">Quienes Somos</h2>
                 <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem dolor, sapiente
                     natus
                     iure autem ut veritatis officiis eveniet adipisci ratione cum vero quidem inventore corrupti culpa
@@ -178,7 +184,7 @@
                     suscipit
                     fuga optio totam. Voluptas veniam, velit autem asperiores sit esse. Similique.</p>
                 <!-- Section heading -->
-                <h3 class="h3-responsive font-weight-bold my-5 lead">Nuestro Talento</h3>
+                <h3 class="h3-responsive font-weight-bold my-5 lead color-theme--primary">Nuestro Talento</h3>
                 <!-- Section description -->
                 <p class="w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
@@ -188,14 +194,14 @@
                 <!-- Grid row -->
                 <div class="row">
 
-                    <!-- Grid column -->
+                    <!-- Anna Williams -->
                     <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
                                 class="avatar-img z-depth-1" alt="Sample avatar">
                         </div>
-                        <h5 class="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-                        <p class="text-uppercase gray-text"><strong>Graphic designer</strong></p>
+                        <h5 class="font-weight-bold mt-4 mb-3 color-theme--primary">Anna Williams</h5>
+                        <p class="text-uppercase"><strong>Graphic designer</strong></p>
                         <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p>
@@ -214,16 +220,16 @@
                             </a>
                         </ul>
                     </div>
-                    <!-- Grid column -->
+                    <!-- Anna Williams -->
 
-                    <!-- Grid column -->
+                    <!-- John Doe -->
                     <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
                                 class="avatar-img z-depth-1" alt="Sample avatar">
                         </div>
-                        <h5 class="font-weight-bold mt-4 mb-3">John Doe</h5>
-                        <p class="text-uppercase gray-text"><strong>Web developer</strong></p>
+                        <h5 class="font-weight-bold mt-4 mb-3 color-theme--primary">John Doe</h5>
+                        <p class="text-uppercase"><strong>Web developer</strong></p>
                         <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa
                             accusantium
                             doloremque rem laudantium totam aperiam.</p>
@@ -242,16 +248,16 @@
                             </a>
                         </ul>
                     </div>
-                    <!-- Grid column -->
+                    <!-- John Doe -->
 
-                    <!-- Grid column -->
+                    <!-- Maria Smith -->
                     <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
                         <div class="avatar mx-auto">
                             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
                                 class="avatar-img z-depth-1" alt="Sample avatar">
                         </div>
-                        <h5 class="font-weight-bold mt-4 mb-3">Maria Smith</h5>
-                        <p class="text-uppercase gray-text"><strong>Photographer</strong></p>
+                        <h5 class="font-weight-bold mt-4 mb-3 color-theme--primary">Maria Smith</h5>
+                        <p class="text-uppercase"><strong>Photographer</strong></p>
                         <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt
                             mollit anim est fugiat nulla id eu laborum.</p>
@@ -270,16 +276,16 @@
                             </a>
                         </ul>
                     </div>
-                    <!-- Grid column -->
+                    <!-- Maria Smith -->
 
-                    <!-- Grid column -->
+                    <!-- Tom Adams -->
                     <div class="col-lg-3 col-md-6">
                         <div class="avatar mx-auto">
                             <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
                                 class="avatar-img z-depth-1" alt="Sample avatar">
                         </div>
-                        <h5 class="font-weight-bold mt-4 mb-3">Tom Adams</h5>
-                        <p class="text-uppercase gray-text"><strong>Backend developer</strong></p>
+                        <h5 class="font-weight-bold mt-4 mb-3 color-theme--primary">Tom Adams</h5>
+                        <p class="text-uppercase"><strong>Backend developer</strong></p>
                         <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui
                             consectetur
                             totam officia voluptates perferendis voluptatibus aut.</p>
@@ -298,7 +304,7 @@
                             </a>
                         </ul>
                     </div>
-                    <!-- Grid column -->
+                    <!-- Tom Adams -->
 
                 </div>
                 <!-- Grid row -->
@@ -307,7 +313,7 @@
         <!-- Team -->
 
         <!-- Portafolio -->
-        <section id="portafolio" class="d-block d-md-flex flex-md-center bg-dark px-5">
+        <section id="portafolio" class="d-block d-md-flex flex-md-center bg-theme--primary px-5">
             <div class="w-100 mx-auto">
                 <h2 class="white-text display-5 pt-5 pb-0 pb-md-5 text-center">Portafolio</h2>
                 <div class="container-fluid">
@@ -322,7 +328,7 @@
                                         <p class="card-text py-3">Some quick example text to build on the card title and
                                             make up the
                                             bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-theme-yellow">Go somewhere</a>
+                                        <a href="#" class="btn btn--yellow border--dark text-dark">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +344,7 @@
                                         <p class="card-text py-3">Some quick example text to build on the card title and
                                             make up the
                                             bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-theme-yellow">Go somewhere</a>
+                                        <a href="#" class="btn btn--yellow border--dark text-dark">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +360,7 @@
                                         <p class="card-text py-3">Some quick example text to build on the card title and
                                             make up the
                                             bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-theme-yellow">Go somewhere</a>
+                                        <a href="#" class="btn btn--yellow border--dark text-dark">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +376,7 @@
                                         <p class="card-text py-3">Some quick example text to build on the card title and
                                             make up the
                                             bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-theme-yellow">Go somewhere</a>
+                                        <a href="#" class="btn btn--yellow border--dark text-dark">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +466,7 @@
                         </form>
 
                         <div class="text-center text-md-left mt-5">
-                            <a class="btn btn-theme-yellow black-text"
+                            <a class="btn btn--yellow border--dark text-dark"
                                 onclick="document.getElementById('contact-form').submit();">
                                 <i class="far fa-envelope mr-2 fa-2x"></i>
                                 <span>Enviar</span>
@@ -473,15 +479,15 @@
                     <!--Grid column-->
                     <div class="col-md-5 text-center">
                         <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-map-marker-alt fa-2x color-theme--yellow "></i>
+                            <li><i class="fas fa-map-marker-alt fa-2x color-theme--primary "></i>
                                 <p class="mt-4 font-weight-bold">San Francisco, CA 94126, USA</p>
                             </li>
 
-                            <li><i class="fas fa-phone mt-4 fa-2x color-theme--yellow"></i>
+                            <li><i class="fas fa-phone mt-4 fa-2x color-theme--primary"></i>
                                 <p class="mt-4 font-weight-bold">+ 01 234 567 89</p>
                             </li>
 
-                            <li><i class="fas fa-envelope mt-4 fa-2x color-theme--yellow"></i>
+                            <li><i class="fas fa-envelope mt-4 fa-2x color-theme--primary"></i>
                                 <p class="mt-4 font-weight-bold">contact@mdbootstrap.com</p>
                             </li>
                         </ul>
@@ -505,7 +511,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer font-small bg-dark">
+    <footer class="page-footer font-small bg-theme--primary">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left p-5">
