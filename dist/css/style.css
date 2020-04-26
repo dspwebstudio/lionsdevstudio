@@ -177,7 +177,13 @@ img {
 
 /* Navbar */
 .navbar {
-  background-color: #000000;
+  background-color: #212121;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    background-color: #000000;
+  }
 }
 
 .navbar-nav {
@@ -252,6 +258,12 @@ img {
   margin: auto;
 }
 
+@media screen and (min-width: 576px) {
+  .welcome__buttons {
+    width: 60%;
+  }
+}
+
 .welcome-img {
   width: 100%;
   height: 60vh;
@@ -265,5 +277,52 @@ img {
 .avatar-img {
   width: 200px;
   height: 200px;
+}
+
+/* Carousel */
+.carousel-inner {
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel__img {
+  margin: auto;
+}
+
+.carousel-item {
+  width: 25%;
+  margin: auto;
+}
+
+.adidas {
+  position: relative;
+  left: 20%;
+}
+
+.susimpatica {
+  position: relative;
+  left: 12%;
+}
+
+.cocacola {
+  position: relative;
+  left: 12%;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #212121;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-footer {
+    background-color: #0F4480;
+  }
 }
 /*# sourceMappingURL=style.css.map */
