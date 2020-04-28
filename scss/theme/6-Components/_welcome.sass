@@ -15,30 +15,6 @@
             width: 100%
             height: 51vh
 
-    &-about
-        width: 100%
-        height: 25vh
-        cursor: pointer
-        margin: 0.25rem
-        &-view 
-                
-            &__img
-                width: 100%
-                height: 25vh
-
-    &-services
-        width: 100%
-        height: 25vh
-        background-color: green
-        cursor: pointer
-        margin: 0.25rem
-
-        &-view
-
-            &__img
-                width: 100%
-                height: 25vh
-        
     &-mask
         display: flex 
         flex-direction: column 
@@ -47,6 +23,13 @@
         padding: 1.5rem
         &__title
             color: #ffffff
+            
+    &-about
+        @include t-welcome-sections-mixin
+
+    &-services
+        @include t-welcome-sections-mixin
+        
 
     &-portafolio
         @include t-welcome-sections-mixin
