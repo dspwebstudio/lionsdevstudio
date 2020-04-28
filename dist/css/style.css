@@ -1,3 +1,74 @@
+.welcome {
+  height: auto;
+}
+
+.welcome__title {
+  color: #ffffff;
+}
+
+.section-welcome {
+  width: 100%;
+  height: 51vh;
+  background-color: red;
+  cursor: pointer;
+}
+
+.section-welcome__img {
+  width: 100%;
+  height: 51vh;
+}
+
+.section-about {
+  width: 100%;
+  height: 25vh;
+  cursor: pointer;
+}
+
+.section-about__img {
+  width: 100%;
+  height: 25vh;
+}
+
+.section-services {
+  width: 100%;
+  height: 25vh;
+  background-color: green;
+  cursor: pointer;
+}
+
+.section-services__img {
+  width: 100%;
+  height: 25vh;
+}
+
+.section-3 {
+  width: 100%;
+  height: 25vh;
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.section-4 {
+  width: 100%;
+  height: 25vh;
+  cursor: pointer;
+  background-color: orange;
+}
+
+.section-5 {
+  width: 100%;
+  height: 25vh;
+  cursor: pointer;
+  background-color: purple;
+}
+
+.section-6 {
+  width: 100%;
+  height: 25vh;
+  cursor: pointer;
+  background-color: cyan;
+}
+
 .color-theme--primary {
   color: #0F4480;
 }
