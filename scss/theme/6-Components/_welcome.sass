@@ -1,0 +1,61 @@
+/* ======================== WELCOME.SASS ==========================*/
+.welcome
+    height: auto
+    background-color: #000000
+    &__title
+        color: #ffffff
+
+.section
+
+    &-welcome
+        width: 100%
+        height: 51vh
+        cursor: pointer
+        &__img
+            width: 100%
+            height: 51vh
+
+    &-about
+        width: 100%
+        height: 25vh
+        cursor: pointer
+        margin: 0.25rem
+        &-view 
+                
+            &__img
+                width: 100%
+                height: 25vh
+
+    &-services
+        width: 100%
+        height: 25vh
+        background-color: green
+        cursor: pointer
+        margin: 0.25rem
+
+        &-view
+
+            &__img
+                width: 100%
+                height: 25vh
+        
+    &-mask
+        display: flex 
+        flex-direction: column 
+        justify-content: center
+        align-items: center
+        padding: 1.5rem
+        &__title
+            color: #ffffff
+
+    &-portafolio
+        @include t-welcome-sections-mixin
+
+    &-blog
+        @include t-welcome-sections-mixin
+
+    &-contacto
+        @include t-welcome-sections-mixin
+
+/* ======================== END WELCOME.SASS ==========================*/
+

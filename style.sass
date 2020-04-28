@@ -5,7 +5,7 @@ $s-color-yellow: #fff800
 $s-color-navbar: #000000
 
 @import 'scss/theme/2-Tools/_mixins'
-@import 'scss/theme/6-Components/_welcome-section'
+@import 'scss/theme/6-Components/_welcome'
 
 .color-theme--primary
     color: $s-color-primary
@@ -33,9 +33,11 @@ body
 
 main 
     max-width: 1100px
+    margin: auto
     @media screen and ( min-width: 1400px)
         max-width: 1280px
-    margin: auto
+    @media screen and ( min-width: 1680px)
+        max-width: 1540px
 
 h4
     color: $s-color-primary
