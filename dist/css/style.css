@@ -204,13 +204,13 @@ img {
 
 .section-welcome {
   width: 100%;
-  height: 51vh;
+  height: 56vh;
   cursor: pointer;
 }
 
 .section-welcome__img {
   width: 100%;
-  height: 51vh;
+  height: 56vh;
 }
 
 .section-mask {
@@ -236,7 +236,7 @@ img {
 
 .section-about {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,17 +251,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
 }
 
 .section-about-view__img {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
 }
 
 .section-services {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,17 +275,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
 }
 
 .section-services-view__img {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
 }
 
 .section-portafolio {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,17 +299,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
 }
 
 .section-portafolio-view__img {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
 }
 
 .section-blog {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,17 +323,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
 }
 
 .section-blog-view__img {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
 }
 
 .section-contacto {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,12 +347,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
 }
 
 .section-contacto-view__img {
   width: 100%;
-  height: 25vh;
+  height: 28.5vh;
 }
 
 /* ======================== END WELCOME.SASS ==========================*/
