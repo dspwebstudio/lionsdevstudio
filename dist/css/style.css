@@ -457,18 +457,6 @@ img {
   }
 }
 
-.page-footer-domicilio__hr {
-  margin-left: auto;
-  margin-bottom: 30px;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 576px) {
-  .page-footer-domicilio__hr {
-    margin: 10px auto 20px 0;
-  }
-}
-
 @media screen and (min-width: 576px) {
   .page-footer-domicilio__titulo {
     margin: 0 auto 0 0;
