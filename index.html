@@ -17,6 +17,8 @@
     <link href="dist/css/mdb.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="dist/css/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" class="hidden" oncopy="return false" oncut="return false"
@@ -48,7 +50,7 @@
                         <li class="nav-item mx-auto">
                             <a data-scroll class="nav-link btn btn--yellow text-dark" href="#contacto">Contacto</a>
                         </li>
-                        
+
                         <div class="d-flex">
                             <ul class="list-unstyled d-flex mx-auto ml-md-5 my-5">
                                 <!-- Skype -->
@@ -99,7 +101,7 @@
                     <img src="dist/img/imagenes/c8.jpeg" class="welcome-img" alt="" srcset="">
                     <div class="welcome__mask mask rgba-black-strong flex-center flex-column">
                         <h1 class="welcome__h1 text-center pb-5 pt-5 white-text"> Diseño & Desarrollo Web</h1>
-                    
+
                         <!-- Botones -->
                         <ul class="welcome__buttons mt-3 mt-md-2 mb-5 mb-md-5 text-center">
                             <a data-scroll href="#servicios"
@@ -146,8 +148,9 @@
                             <div class="welcome-view view flex-center flex-column">
                                 <img src="dist/img/imagenes/c8.jpeg" class="section-welcome__img" alt="" srcset="">
                                 <div class="welcome__mask mask rgba-black-strong flex-center flex-column">
-                                    <h1 class="welcome__h1 text-center pb-4 white-text display-4"> Diseño & Desarrollo Web</h1>
-                    
+                                    <h1 class="welcome__h1 text-center pb-4 white-text display-4"> Diseño & Desarrollo
+                                        Web</h1>
+
                                 </div>
                             </div>
                             <!-- Titulo -->
@@ -473,7 +476,7 @@
                     <div class="row d-flex justify-content-center pb-md-5">
 
                         <div class="col-md-6 mt-md-0 mb-5 mt-5 mt-md-0">
-                            <div class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-right" class="card z-depth-5 mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100"
                                         src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg">
@@ -489,7 +492,7 @@
                         </div>
 
                         <div class="col-md-6 mt-md-0 mb-5 mb-md-0">
-                            <div class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-left" class="card z-depth-5 mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100"
                                         src="https://mdbootstrap.com/img/Photos/Slides/img%20(36).jpg">
@@ -505,7 +508,7 @@
                         </div>
 
                         <div class="col-md-6 mt-md-0 mb-5 mb-md-0">
-                            <div class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-right" class="card z-depth-5 mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100"
                                         src="https://mdbootstrap.com/img/Photos/Slides/img%20(37).jpg">
@@ -521,7 +524,7 @@
                         </div>
 
                         <div class="col-md-6 mt-md-0 mb-5 mb-md-0">
-                            <div class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-left" class="card z-depth-5 mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100"
                                         src="https://mdbootstrap.com/img/Photos/Slides/img%20(38).jpg">
@@ -614,7 +617,7 @@
                 <h2 class="display-5 text-center my-5 white-text">Contáctanos</h2>
 
                 <!--Section description-->
-                <p class="text-center mx-auto mb-5 lead px-5">¿Tiene usted alguna pregunta? Por favor no dude en
+                <p data-aos="fade-left" class="text-center mx-auto mb-5 lead px-5">¿Tiene usted alguna pregunta? Por favor no dude en
                     contactarnos directamente. Nuestro equipo volverá a usted dentro de cuestión de horas para ayudarlo.
                 </p>
 
@@ -880,7 +883,11 @@
             offset: 130
         });
     </script>
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
