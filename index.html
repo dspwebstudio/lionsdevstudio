@@ -11,6 +11,8 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -109,7 +111,7 @@
                             <a data-scroll href="#nosotros"
                                 class="btn btn--secondary s-border--light white-text">Nosotros</a>
                             <a data-scroll href="#contacto"
-                                class="btn btn--yellow s-border--light dark-text">Contacto</a>
+                                class="btn btn--yellow s-border--dark text-dark">Contacto</a>
                         </ul>
                         <!-- Botones -->
                     </div>
@@ -142,7 +144,7 @@
                 <!-- First Row -->
                 <div class="row">
                     <!-- Welcome Section -->
-                    <div class="col-md-8 pt-0 p-1 section--hover overflow-x-hidden">
+                    <div data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="50" class="col-md-8 pt-0 p-1 section--hover overflow-x-hidden ">
                         <div class="section-welcome">
                             <!-- Titulo -->
                             <div class="welcome-view view flex-center flex-column">
@@ -161,25 +163,25 @@
                     <div class="col-md-4">
                         <div class="row">
                             <!-- About Section -->
-                            <div class="section-about p-1 overflow-x-hidden">
+                            <div data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="1000" class="section-about p-1 overflow-x-hidden">
                                 <div class="section-about-view view">
                                     <img src="dist/img/imagenes/blur-cellphone-close-up-device.jpg"
                                         class="section-about-view__img">
                                     <div class="mask p-4 flex-center flex-column rgba-black-strong">
-                                        <h3 class="section__title pb-3 white-text">Quienes Somos</h3>
-                                        <a href="#" class="btn btn--secondary s-border--light white-text"><span>Mas
+                                        <h3 class="section__title pb-3 white-text text-center">Quienes Somos</h3>
+                                        <a href="#nosotros" class="btn btn--yellow s-border--dark text-dark"><span>Mas
                                                 info</span><i class="fas fa-search ml-2"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <!-- About Section -->
                             <!-- Services Section -->
-                            <div class="section-services p-1 overflow-x-hidden">
+                            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1500" class="section-services p-1 overflow-x-hidden">
                                 <div class="section-services-view view">
                                     <img src="dist/img/imagenes/c6.jpeg" class="section-services-view__img">
                                     <div class="section-mask mask rgba-black-strong">
                                         <h3 class="section-mask__title pb-3">Servicios</h3>
-                                        <a href="#servicios" class="btn btn--primary s-border--light white-text"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
+                                        <a href="#servicios" class="btn btn--yellow s-border--dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -190,41 +192,41 @@
                 </div>
                 <!-- First Row -->
                 <!-- Second Row -->
-                <div class="row pb-4">
+                <div class="row pb-4 overflow-hidden">
                     <!-- Portfolio Section -->
-                    <div class="col-md-4 p-1">
+                    <div data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="2000" class="col-md-4 p-1">
                         <div class="section-portafolio">
                             <div class="section-portafolio-view view">
                                 <img src="dist/img/imagenes/c3.jpg" class="section-portafolio-view__img">
                                 <div class="section-mask mask rgba-black-strong">
                                     <h3 class="section-mask__title pb-3">Portafolio</h3>
-                                    <a href="#" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
+                                    <a href="#portafolio" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Portfolio Section -->
                     <!-- Blog Section -->
-                    <div class="col-md-4 p-1">
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500" class="col-md-4 p-1">
                         <div class="section-blog">
                             <div class="section-blog-view view">
                                 <img src="dist/img/imagenes/c2.jpg" class="section-blog-view__img">
                                 <div class="section-mask mask rgba-black-strong">
                                     <h3 class="section-mask__title pb-3">Blog</h3>
-                                    <a href="#" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
+                                    <a href="#blog" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Blog Section -->
                     <!-- Contact Section -->
-                    <div class="col-md-4 p-1">
+                    <div data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="3000" class="col-md-4 p-1">
                         <div class="section-contacto">
                             <div class="section-contacto-view view">
                                 <img src="dist/img/imagenes/c5.jpeg" class="section-contacto-view__img">
                                 <div class="section-mask mask rgba-black-strong">
                                     <h3 class="section-mask__title pb-3">Contacto</h3>
-                                    <a href="#" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
+                                    <a href="#contacto" class="btn btn--yellow s-border--dark text-dark"><span>Mas info</span><i class="fas fa-search ml-2"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +402,7 @@
 
                         <!-- Diseño Web -->
                         <div class="col-md-6 mt-md-0 mb-5 mt-5 mt-md-0 px-0 px-md-2 px-lg-3 overflow-x-hidden">
-                            <div data-aos="fade-right" data-aos-duration="1500" class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-right" data-aos-duration="1500" class="card mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100 h-100"
                                         src="dist/img/imagenes/blur-cellphone-close-up-device.jpg">
@@ -416,7 +418,7 @@
 
                         <!-- Desarrollo Web -->
                         <div class="col-md-6 mt-md-0 mb-5 mb-md-0 px-0 px-md-2 px-lg-3 overflow-x-hidden">
-                            <div data-aos="fade-left" data-aos-duration="1500" class="card z-depth-5 mx-auto">
+                            <div data-aos="fade-left" data-aos-duration="1500" class="card mx-auto">
                                 <div class="view">
                                     <img class="d-block w-100" src="dist/img/imagenes/coding-computer.jpg">
                                     <div class="mask p-4 flex-center flex-column rgba-black-strong">
@@ -733,7 +735,6 @@
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left p-5">
 
-            <!-- Grid row -->
             <div class="row">
 
 
@@ -840,7 +841,6 @@
                 <!-- Social Feeds -->
 
             </div>
-            <!-- Grid row -->
 
         </div>
         <!-- Footer Links -->
