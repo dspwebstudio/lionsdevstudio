@@ -138,6 +138,29 @@ img {
 }
 
 /*=========================== ENDBUTTONS ===========================*/
+.o-section-header {
+  height: 30vh;
+  margin-top: 130px;
+}
+
+.o-section-header__img {
+  height: 30vh;
+  position: fixed;
+}
+
+.o-section-navbar {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0f0f0f;
+}
+
 /* Navbar */
 .navbar {
   background-color: #212121;
@@ -460,6 +483,25 @@ img {
 }
 
 /* ======================== END WELCOME.SASS ==========================*/
+.about {
+  height: auto;
+}
+
+.about__img {
+  display: none;
+}
+
+@media screen and (min-width: 765px) {
+  .about__img {
+    display: block;
+    position: relative;
+    left: -40px;
+    top: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 /*======================== page-footer-domicilio ========================*/
 .page-footer-domicilio {
   display: -webkit-box;
@@ -573,5 +615,9 @@ img {
 
 .footer__icons {
   font-size: 30px;
+}
+
+.mt-section {
+  margin-top: 168px;
 }
 /*# sourceMappingURL=style.css.map */
