@@ -488,21 +488,70 @@ img {
 
 /* ======================== END WELCOME.SASS ==========================*/
 .about {
-  height: auto;
+  width: 100%;
 }
 
 .about__img {
   display: none;
 }
 
-@media screen and (min-width: 765px) {
+.about__paragraph {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about__paragraph-p {
+  color: #ffffff;
+  line-height: 1.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    width: 75%;
+  }
   .about__img {
     display: block;
-    position: relative;
-    left: -40px;
-    top: 100px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 70vw;
+    height: 70vh;
+  }
+  .about__paragraph {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: 62vh;
+    left: 35vw;
+    background-color: #000000;
+    opacity: 0.8;
+  }
+  .about__paragraph-p {
+    color: #ffffff;
+    z-index: 3;
+    line-height: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    width: 100%;
+  }
+  .about__img {
+    width: 60vw;
+    height: 60vh;
+  }
+  .about__paragraph {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 60vh;
+    left: 40vw;
+    background-color: #000000;
+    opacity: 0.8;
+  }
+  .about__paragraph-p {
+    color: #ffffff;
+    z-index: 3;
+    line-height: 1.6em;
   }
 }
 
