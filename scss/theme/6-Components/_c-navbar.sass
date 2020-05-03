@@ -13,27 +13,33 @@
     background-color: #c2c2c2
     text-align: center
     border-radius: 15px
+    color: #000000
     @media screen and (min-width: 576px)
         background-color: transparent
         height: auto
         flex-direction: row
         border-radius: 0
+        color: #ffffff
 
-.nav-link 
+.nav-item
     letter-spacing: 2px
+    font-size: 20px
     width: 170px
     margin: 20px 0
-    border: 2px solid #000
+    color: #000000
+    text-align: center
     @media screen and (min-width: 576px)
         margin: auto
+        color: #ffffff
     &:hover
         background-color: $s-color-secondary
-        border-radius: 25px
+        border-radius: 10px
+        color: #ffffff
 
 
 .nav-link .active
     background-color: #ffffff
-    color: #000000 !important
+
 
 .navbar__img
     width: 250px

@@ -23,34 +23,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" class="hidden" oncopy="return false" oncut="return false"
+<body data-spy="scroll" data-target="o-section-navbar" class="hidden" oncopy="return false" oncut="return false"
     onpaste="return false">
 
     <!-- Encabezado -->
-    <header>
-        <nav class="navbar navbar-expand-xl navbar-dark fixed-top pt-4">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand w-50" href="index.html">
                     <img src="dist/img/Logo/lionsdevstudio-white.png" alt="" srcset="" class="navbar__img">
                 </a>
+
+
                 <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mb-5 mb-md-0">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0 mb-5 mb-md-0 d-flex justify-content-center">
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme" href="#servicios">Servicios</a>
+                            <a data-scroll class="nav-link font-weight-bold" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme" href="#portafolio">Portafolio</a>
+                            <a data-scroll class="nav-link font-weight-bold" href="#portafolio">Portafolio</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn-theme" href="#blog">Blog</a>
+                            <a data-scroll class="nav-link font-weight-bold" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a data-scroll class="nav-link btn btn--yellow text-dark" href="#contacto">Contacto</a>
+                            <a data-scroll class="nav-link font-weight-bold" href="#contacto">Contacto</a>
                         </li>
 
                         <div class="navbar-social d-flex">
@@ -89,6 +92,11 @@
                 </div>
             </div>
         </nav>
+        <div class="o-section-navbar blue-gradient">
+            <a class="o-section-navbar__link white-text p-3" href="#nosotros">Quienes Somos</a>
+            <a class="o-section-navbar__link white-text p-3" href="#talento">Talento</a>
+            <a class="o-section-navbar__link white-text p-3" href="#servicios">Servicios</a>
+        </div>
     </header>
     <!-- Encabezado -->
 
@@ -97,7 +105,7 @@
 
         <header class="o-section-header o-section-header--about">
             <div class="o-section-header-view view">
-                <img src="dist/img/imagenes/edificio.jpeg" class="o-section-header__img w-100" alt="" srcset="">
+                <img src="dist/img/imagenes/edificio.jpeg" class="o-section-header__img w-100" alt="edificio">
                 <div class="mask flex-center rgba-black-slight">
                     <h1 class="display-3 text-center white-text">Sobre Nosotros</h1>
 
@@ -105,19 +113,14 @@
             </div>
         </header>
         <div class="clearfix"></div>
-        <div class="container-fluid p-0">
-            <nav class="o-section-navbar">
-                <a class="btn btn--yellow dark-text s-border--dark" href="#nosotros">Nuestro Talento</a>
-                <a class="btn btn--yellow dark-text s-border--dark" href="#clientes">Nuestros Clientes</a>
-            </nav>
-        </div>
+
 
         <!-- Quienes Somos -->
         <section id="nosotros" class="py-5 px-0 overflow-x-hidden s-bg-theme--secondary">
 
-            <h2 class="display-5 white-text text-center py-5">Quienes Somos</h2>
+            <h2 class="display-4 white-text text-center py-5">Quienes Somos</h2>
             <div class="about overflow-x-hidden mx-auto py-5">
-                <img src="dist/img/imagenes/edificio.jpeg" class="about__img" alt="">
+                <img src="dist/img/imagenes/edificio.jpeg" class="about__img" alt="edificio">
                 <div class="about__paragraph">
                     <p class="about__paragraph-p text-justify mx-auto p-5">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Et ut atque, laboriosam impedit esse veniam commodi omnis numquam voluptatem
@@ -137,8 +140,8 @@
         <!-- ./Quienes Somos -->
 
         <!-- Nuestro Talento -->
-        <div class="our-talent white py-5 px-2">
-            <h3 class="display-5 my-5 text-center s-color-theme--primary">Nuestro Talento</h3>
+        <div id="talento" class="our-talent white py-5 px-2">
+            <h3 class="display-4 my-5 text-center s-color-theme--primary">Talento</h3>
 
             <p class="mx-auto mb-5 w-50 lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
@@ -151,7 +154,7 @@
 
                     <!-- Anna Williams -->
                     <div class="col-md-6 mb-lg-0 mb-3 mt-5">
-                        <div class="text-white s-bg-theme--secondary mx-2 rounded">
+                        <div class="text-white blue-gradient mx-2 rounded">
                             <div class="card-title pt-5">
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
                                     class="avatar-img z-depth-1 mt-4" alt="Sample avatar">
@@ -187,7 +190,7 @@
 
                     <!-- John Doe -->
                     <div class="col-md-6 mb-lg-0 mb-3 mt-5">
-                        <div class="text-white s-bg-theme--secondary mx-2 rounded">
+                        <div class="text-white blue-gradient mx-2 rounded">
                             <div class="card-title pt-5">
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
                                     class="avatar-img z-depth-1 mt-4" alt="Sample avatar">
@@ -224,7 +227,7 @@
 
                     <!-- Maria Smith -->
                     <div class="col-md-6 mb-lg-0 mb-3 mt-5">
-                        <div class="text-white s-bg-theme--secondary mx-2 rounded">
+                        <div class="text-white blue-gradient mx-2 rounded">
                             <div class="card-title pt-5">
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
                                     class="avatar-img z-depth-1 mt-4" alt="Sample avatar">
@@ -261,7 +264,7 @@
 
                     <!-- Tom Adams -->
                     <div class="col-md-6 mb-lg-0 mb-3 mt-5">
-                        <div class="text-white s-bg-theme--secondary mx-2 rounded">
+                        <div class="text-white blue-gradient mx-2 rounded">
                             <div class="card-title pt-5">
                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
                                     class="avatar-img z-depth-1 mt-4" alt="Sample avatar">
@@ -305,7 +308,7 @@
         <!-- Servicios -->
         <section id="servicios" class="services d-block d-md-flex flex-md-center s-bg-theme--primary">
             <div class="w-75 mx-auto overflow-x-hidden">
-                <h2 class="white-text display-5 pt-5 pb-0 pb-md-5 text-center">Servicios</h2>
+                <h2 class="white-text display-4 pt-5 pb-0 pb-md-5 text-center">Servicios</h2>
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-center pb-md-5">
 
@@ -350,7 +353,7 @@
         <section id="clientes" class="clientes overflow-x-hidden s-bg-theme--secondary">
             <div class="flex-center flex-column">
                 <div class="w-75 mx-auto">
-                    <h2 class="pt-5 pb-5 text-center display-5 white-text">Nuestros Clientes</h2>
+                    <h2 class="pt-5 pb-5 text-center display-4 white-text">Clientes</h2>
                     <div class="pt-0 pb-5">
                         <!-- carousel -->
                         <div id="carousel-clientes" class="carousel slide mx-auto" data-ride="carousel">
@@ -514,7 +517,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="dist/js/mdb.min.js"></script>
     <!-- Smooth Scroll -->
-    <script type="text/javascript" src="dist/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="dist/js/smooth-scroll_section.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
@@ -524,7 +527,7 @@
     <script>
         $("body").attr({
             "data-spy": "scroll",
-            "data-target": ".navbar"
+            "data-target": "o-section-navbar"
         }).scrollspy({
             offset: 130
         });
