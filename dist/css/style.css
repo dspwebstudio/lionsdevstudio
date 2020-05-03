@@ -583,6 +583,12 @@ img {
   height: 300px;
 }
 
+.avatar-img {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+}
+
 /*======================== page-footer-domicilio ========================*/
 .page-footer-domicilio {
   display: -webkit-box;
@@ -672,11 +678,6 @@ img {
 /* Team */
 .team-section strong {
   color: #0F4480;
-}
-
-.avatar-img {
-  width: 70px;
-  height: 80px;
 }
 
 .overflow-x-hidden {
