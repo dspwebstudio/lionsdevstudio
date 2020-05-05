@@ -8,14 +8,33 @@
         color: #ffffff
 
 .section
+    width: 100%
+    height: 30vh
+    cursor: pointer
+    display: flex
+    align-items: center
+    flex-direction: column 
+    justify-content: center
+    &-view
+        width: 100%
+        height: 100%
+        &__img
+            width: 100%
+            height: 100%
+            overflow: hidden
 
     &-welcome
         width: 100%
-        height: 56vh
+        height: 59vh
         cursor: pointer
+        &-view
+            width: 100%
+            height: 100%
+        @media screen and (min-width:768)
+            height: 59vh
         &__img
             width: 100%
-            height: 56vh
+            height: 100%
 
     &-mask
         display: flex 
@@ -26,20 +45,6 @@
         &__title
             color: #ffffff
 
-    &-about
-        @include t-welcome-sections-mixin
-
-    &-services
-        @include t-welcome-sections-mixin
-        
-    &-portafolio
-        @include t-welcome-sections-mixin
-
-    &-blog
-        @include t-welcome-sections-mixin
-
-    &-contacto
-        @include t-welcome-sections-mixin
 
 /* ------------------ Welcome Smartphone -------------------- */
 
