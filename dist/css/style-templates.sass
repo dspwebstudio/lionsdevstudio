@@ -2,43 +2,95 @@
 
 /*===================== VARIABLES =====================*/
 
-$s-body-background-color: white
+// colors
+$s-body-background-color: #0a0a0a
 $s-color-theme-primary: #0F4480
 $s-color-theme-secondary: #0277bd
+$s-color-theme-tertiary: #fff800
 
+// main
 $e-main-margin-top: 135px
+$e-main-max-width: 1100px
+$e-main-background-color: #f2f2f2
 
 /* section */
 $o-section-container-max-width: 1200px
 $o-section-container-margin: 0 auto
 $o-section-container-padding: 60px
+$o-section-container-background-color: transparent
 
 /* Titulos */
 $o-section__h1-font-size: auto
 $o-section__h1-color: $s-color-theme-primary
 $o-section__h2-font-size: auto
-$o-section__h2-color: #000000
+$o-section__h2-color: #0F4480
 $o-section__h3-font-size: auto
-$o-section__h3-color: #000000
+$o-section__h3-color: #0F4480
 $o-section__h4-font-size: auto
-$o-section__h4-color: #000000
+$o-section__h4-color: #0F4480
 $o-section__h5-font-size: auto
-$o-section__h5-color: #000000
+$o-section__h5-color: #0F4480
 $o-section__h6-font-size: auto
-$o-section__h6-color: #000
+$o-section__h6-color: #0F4480
 
 /* Parrafos */
 $o-section__paragraph-font-size: 1.1em
 $o-section__paragraph-color: black
 
-/* Cards */
+
+
+/* navbar */
+$navbar-background-color : #000000
+$navbar-padding: 20px
+$navbar-padding-sm: 20px
+$navbar-padding-md: 10px
+$navbar-padding-lg: 10px
+$navbar-padding-xl: 0
+
+// navbar-nav
+$navbar-nav-background-color: #0277bd
+$navbar-nav-height: 78vh
+$navbar-nav-height-sm: auto
+$navbar-nav-height-md: auto
+$navbar-nav-height-lg: auto
+$navbar-nav-height-xl: auto
+$nav-toggler-color : yellow
+
+//nav-link
+$nav-link-color : #ffffff
+$nav-link-font-size: 20px
+$nav-link-font-size-sm: 20px
+$nav-link-font-size-md: 20px
+$nav-link-font-size-lg: 20px
+$nav-link-font-size-xl: 1.1em
+
+$nav-link-padding: 30px 0
+$nav-link-padding-sm: 30px 0
+$nav-link-padding-md: 30px 0
+$nav-link-padding-lg: 30px 0
+$nav-link-padding-xl: 30px 0
+
+$nav-link-margin: 0 30px 
+$nav-link-margin-sm: 0 30px 
+$nav-link-margin-md: 0 30px 
+$nav-link-margin-lg: 0 30px 
+$nav-link-margin-xl: 0 30px 
+
+$nav-link-width: 90%
+$nav-link-width-sm: 90%
+$nav-link-width-md: 50%
+$nav-link-width-lg: 120px
+$nav-link-width-xl: 120px
+
+
+// Cards
 $o-card-background: #0277bd
 $card-title-color: #ffffff
 $card-title-size: 20px
 $card-text-color: #ffffff
 $card-social-icons-color: #ffffff
 
-$o-card-width: 250px
+$o-card-width: 100%
 $o-card-min-height: 600px
 
 $o-card-width-sm: 380px
@@ -54,42 +106,16 @@ $o-card-width-xl: 300px
 $o-card-min-height-xl: 550px
 
 $o-card-margin: auto
-$o-card-padding: 40px
+$o-card-padding: 20px
 $o-card-text-align: center
 $card-img-top-size: 150px
 $card-img-top-border-radius: 5%
 
-/* bootstrap theme variables */
-$navbar-background-color : #000000
-$navbar-padding-sm: 20px
-$navbar-padding-md: 10px
-$navbar-padding-lg: 10px
-$navbar-padding-xl: 10px
-$navbar-nav-background-color: #0277bd
-$navbar-nav-height: 78vh
-$navbar-nav-height-sm: auto
-$navbar-nav-height-md: auto
-$navbar-nav-height-lg: auto
-$navbar-nav-height-xl: auto
-$nav-link-color : #ffffff
-$nav-toggler-color : yellow
-$nav-link-font-size: 20px
-$nav-link-font-size-sm: 20px
-$nav-link-font-size-md: 20px
-$nav-link-font-size-lg: 20px
-$nav-link-font-size-xl: 1.1em
-$nav-link-padding-sm: 20px 0
-$nav-link-padding-md: 20px 0
-$nav-link-padding-lg: 20px 0
-$nav-link-padding-xl: 20px 0
-$nav-link-width: 90%
-$nav-link-width-sm: 90%
-$nav-link-width-md: 50%
-$nav-link-width-lg: 120px
-$nav-link-width-xl: 120px
+// Carousel
 $carousel-height: 50vh
 
 
+/*====================== Colors ======================*/
 
 .s-color-primary
     color: $s-color-theme-primary
@@ -100,6 +126,8 @@ $carousel-height: 50vh
     background-color: $s-color-theme-primary
 .s-background-secondary
     background-color: $s-color-theme-secondary
+.s-background-tertiary
+    background-color: $s-color-theme-tertiary
 
 
 /*===================== GENERIC =====================*/
@@ -115,7 +143,9 @@ body
     background-color: $s-body-background-color
 
 main 
-    margin-top: $e-main-margin-top
+    max-width: $e-main-max-width
+    margin: $e-main-margin-top auto auto
+    background-color: $e-main-background-color
 
 img 
     width: 100%
@@ -129,6 +159,7 @@ img
         max-width: $o-section-container-max-width
         margin: $o-section-container-margin
         padding: $o-section-container-padding
+        background-color: $o-section-container-background-color
 
     &__h1
         font-size: $o-section__h1-font-size
@@ -137,39 +168,75 @@ img
 
     &__h2
         font-size: $o-section__h2-font-size
-        color: $o-section__h1-color
-        font-weight: bold
+        color: $o-section__h2-color
+        // font-weight: bold
 
     &__h3
         font-size: $o-section__h3-font-size
-        color: $o-section__h1-color
-        font-weight: bold
+        color: $o-section__h3-color
+        // font-weight: bold
 
     &__h4
         font-size: $o-section__h4-font-size
-        color: $o-section__h1-color
-        font-weight: bold
+        color: $o-section__h4-color
+        // font-weight: bold
 
     &__h5
         font-size: $o-section__h5-font-size
-        color: $o-section__h1-color
-        font-weight: bold
+        color: $o-section__h5-color
+        // font-weight: bold
 
     &__h6
         font-size: $o-section__h6-font-size
-        color: $o-section__h1-color
-        font-weight: bold
+        color: $o-section__h6-color
+        // font-weight: bold
 
     &__paragraph
         font-size: $o-section__paragraph-font-size
         color: $o-section__paragraph-color
 
-/*===================== BOOTSTRAP THEME COMPONENTS =====================*/
+.o-line
+    height: 4px
+    margin: 10px auto 20px 0
+    transform: skew(45deg)
+
+.avatar-img
+    width: $card-img-top-size
+    height: $card-img-top-size
+    border-radius: $card-img-top-border-radius
+    margin: auto
+
+.o-cuadrado
+    width: 160px
+    height: 160px
+    content: ''
+    color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 20px
+
+.title-description
+    font-size: 14px
+
+/*===================== COMPONENT =====================*/
 
 /* Navbar */
 .navbar
     background-color: $navbar-background-color
-    padding: $navbar-padding-sm
+    padding: $navbar-padding
+    @media screen and (min-width: 576px)
+        height: $navbar-nav-height-sm
+        padding: $navbar-padding-sm
+    @media screen and (min-width: 768px)
+        height: $navbar-nav-height-md
+        padding: $navbar-padding-md
+    @media screen and (min-width: 1024px)
+        height: $navbar-nav-height-lg
+        padding: $navbar-padding-lg
+    @media screen and (min-width: 1280px)
+        height: $navbar-nav-height-xl
+        padding: $navbar-padding-xl
     &-brand 
         color: $nav-link-color
         font-size: 20px
@@ -177,36 +244,45 @@ img
         color: $nav-toggler-color
     &-nav
         background-color: $navbar-nav-background-color
-        height: 78vh
+        height: $navbar-nav-height
         display: flex
         align-items: center
         justify-content: center
         @media screen and (min-width: 576px)
-            height: auto
+            height: $navbar-nav-height-sm
         @media screen and (min-width: 768px)
-            height: auto
+            height: $navbar-nav-height-md
         @media screen and (min-width: 1024px)
-            height: auto
+            height: $navbar-nav-height-lg
         @media screen and (min-width: 1280px)
-            height: auto
+            height: $navbar-nav-height-xl
+            padding: $navbar-padding-xl
 .nav-link
         color: $nav-link-color
         font-size: $nav-link-font-size
-        padding: $nav-link-padding-sm
         width: $nav-link-width
+        padding: $nav-link-padding
+        margin: $nav-link-margin
         text-align: center
-        margin: auto
         @media screen and (min-width: 576px)
             width: $nav-link-width-sm
+            padding: $nav-link-padding-sm
+            margin: $nav-link-margin-sm
             font-size: $nav-link-font-size-sm
         @media screen and (min-width: 768px)
             width: $nav-link-width-md
+            padding: $nav-link-padding-md
+            margin: $nav-link-margin-md
             font-size: $nav-link-font-size-md
         @media screen and (min-width: 1024px)
             width: $nav-link-width-lg
+            padding: $nav-link-padding-lg
+            margin: $nav-link-margin-lg
             font-size: $nav-link-font-size-lg
         @media screen and (min-width: 1280px)
             width: $nav-link-width-xl
+            padding: $nav-link-padding-xl
+            margin: $nav-link-margin-xl
             font-size: $nav-link-font-size-xl
         &:hover
             color: $nav-link-color
@@ -245,29 +321,9 @@ img
         height: $card-img-top-size
         border-radius: $card-img-top-border-radius
         margin: auto
-.avatar-img
-    width: $card-img-top-size
-    height: $card-img-top-size
-    border-radius: $card-img-top-border-radius
-    margin: auto
+
 
 /* Carousel */ 
 .carousel, .carousel-inner, .carousel__img
     height: $carousel-height
 
-
-
-/*===================== OBJECTS =====================*/
-
-.o-cuadro-1, .o-cuadro-2
-    width: 160px
-    height: 160px
-    content: ''
-    color: #ffffff
-    display: flex
-    align-items: center
-    justify-content: center
-    font-size: 20px
-
-.title-description
-    font-size: 14px

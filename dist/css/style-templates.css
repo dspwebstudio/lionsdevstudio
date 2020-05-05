@@ -3,8 +3,8 @@
 /* section */
 /* Titulos */
 /* Parrafos */
-/* Cards */
-/* bootstrap theme variables */
+/* navbar */
+/*====================== Colors ======================*/
 .s-color-primary {
   color: #0F4480;
 }
@@ -21,6 +21,10 @@
   background-color: #0277bd;
 }
 
+.s-background-tertiary {
+  background-color: #fff800;
+}
+
 /*===================== GENERIC =====================*/
 * {
   margin: 0;
@@ -31,11 +35,13 @@
 
 /*===================== ELEMENTS =====================*/
 body {
-  background-color: white;
+  background-color: #0a0a0a;
 }
 
 main {
-  margin-top: 135px;
+  max-width: 1100px;
+  margin: 135px auto auto;
+  background-color: #f2f2f2;
 }
 
 img {
@@ -50,6 +56,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px;
+  background-color: transparent;
 }
 
 .o-section__h1 {
@@ -61,31 +68,26 @@ img {
 .o-section__h2 {
   font-size: auto;
   color: #0F4480;
-  font-weight: bold;
 }
 
 .o-section__h3 {
   font-size: auto;
   color: #0F4480;
-  font-weight: bold;
 }
 
 .o-section__h4 {
   font-size: auto;
   color: #0F4480;
-  font-weight: bold;
 }
 
 .o-section__h5 {
   font-size: auto;
   color: #0F4480;
-  font-weight: bold;
 }
 
 .o-section__h6 {
   font-size: auto;
   color: #0F4480;
-  font-weight: bold;
 }
 
 .o-section__paragraph {
@@ -93,11 +95,74 @@ img {
   color: black;
 }
 
-/*===================== BOOTSTRAP THEME COMPONENTS =====================*/
+.o-line {
+  height: 4px;
+  margin: 10px auto 20px 0;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.o-cuadrado {
+  width: 160px;
+  height: 160px;
+  content: '';
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.title-description {
+  font-size: 14px;
+}
+
+/*===================== COMPONENT =====================*/
 /* Navbar */
 .navbar {
   background-color: #000000;
   padding: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    height: auto;
+    padding: 0;
+  }
 }
 
 .navbar-brand {
@@ -144,21 +209,24 @@ img {
 @media screen and (min-width: 1280px) {
   .navbar-nav {
     height: auto;
+    padding: 0;
   }
 }
 
 .nav-link {
   color: #ffffff;
   font-size: 20px;
-  padding: 20px 0;
   width: 90%;
+  padding: 30px 0;
+  margin: 0 30px;
   text-align: center;
-  margin: auto;
 }
 
 @media screen and (min-width: 576px) {
   .nav-link {
     width: 90%;
+    padding: 30px 0;
+    margin: 0 30px;
     font-size: 20px;
   }
 }
@@ -166,6 +234,8 @@ img {
 @media screen and (min-width: 768px) {
   .nav-link {
     width: 50%;
+    padding: 30px 0;
+    margin: 0 30px;
     font-size: 20px;
   }
 }
@@ -173,6 +243,8 @@ img {
 @media screen and (min-width: 1024px) {
   .nav-link {
     width: 120px;
+    padding: 30px 0;
+    margin: 0 30px;
     font-size: 20px;
   }
 }
@@ -180,6 +252,8 @@ img {
 @media screen and (min-width: 1280px) {
   .nav-link {
     width: 120px;
+    padding: 30px 0;
+    margin: 0 30px;
     font-size: 1.1em;
   }
 }
@@ -191,9 +265,9 @@ img {
 
 /* Card */
 .card {
-  width: 250px;
+  width: 100%;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
   background-color: #0277bd;
   text-align: center;
   height: 600px;
@@ -248,37 +322,8 @@ img {
   margin: auto;
 }
 
-.avatar-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 5%;
-  margin: auto;
-}
-
 /* Carousel */
 .carousel, .carousel-inner, .carousel__img {
   height: 50vh;
-}
-
-/*===================== OBJECTS =====================*/
-.o-cuadro-1, .o-cuadro-2 {
-  width: 160px;
-  height: 160px;
-  content: '';
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
-}
-
-.title-description {
-  font-size: 14px;
 }
 /*# sourceMappingURL=style-templates.css.map */
