@@ -19,7 +19,7 @@ body
     background-color: $s-body-background-color
 
 main 
-    max-width: $e-main-max-width
+    max-width: 100%
     margin: $e-main-margin-top auto auto
     background-color: $e-main-background-color
 
@@ -36,40 +36,60 @@ img
         margin: $o-section-container-margin
         padding: $o-section-container-padding
         background-color: $o-section-container-background-color
+        @media screen and (min-width: 576px)
+            padding: $o-section-container-padding-sm
+        @media screen and (min-width: 768px)
+            padding: $o-section-container-padding-md
+        @media screen and (min-width: 1024px)
+            padding: $o-section-container-padding-lg
+        @media screen and (min-width: 1280px)
+            padding: $o-section-container-padding-xl
 
     &__h1
         font-size: $o-section__h1-font-size
         color: $o-section__h1-color
-        font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
 
     &__h2
         font-size: $o-section__h2-font-size
         color: $o-section__h2-color
-        // font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
+
 
     &__h3
         font-size: $o-section__h3-font-size
         color: $o-section__h3-color
-        // font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
+
 
     &__h4
         font-size: $o-section__h4-font-size
         color: $o-section__h4-color
-        // font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
+
 
     &__h5
         font-size: $o-section__h5-font-size
         color: $o-section__h5-color
-        // font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
+
 
     &__h6
         font-size: $o-section__h6-font-size
         color: $o-section__h6-color
-        // font-weight: bold
+        font-weight: $o-section-title-font-weight
+        font-family: $o-section-title-font-family
+
 
     &__paragraph
         font-size: $o-section__paragraph-font-size
         color: $o-section__paragraph-color
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 .o-line
     height: 4px
@@ -77,8 +97,8 @@ img
     transform: skew(45deg)
 
 .avatar-img
-    width: $card-img-top-size
-    height: $card-img-top-size
+    width: $card-img-top-width
+    height: $card-img-top-height
     border-radius: $card-img-top-border-radius
     margin: auto
 
@@ -101,6 +121,8 @@ img
 .navbar
     background-color: $navbar-background-color
     padding: $navbar-padding
+    font-family: 'Anton', sans-serif
+
     @media screen and (min-width: 576px)
         height: $navbar-nav-height-sm
         padding: $navbar-padding-sm
@@ -136,17 +158,17 @@ img
 .nav-item 
     margin: 0 20px
 .nav-link
-        color: $nav-link-color
-        font-size: $nav-link-font-size
-        width: $nav-link-width
-        padding: $nav-link-padding
-        margin: $nav-link-margin
-        text-align: center
-        @media screen and (min-width: 576px)
-            width: $nav-link-width-sm
-            padding: $nav-link-padding-sm
-            margin: $nav-link-margin-sm
-            font-size: $nav-link-font-size-sm
+    color: $nav-link-color
+    font-size: $nav-link-font-size
+    width: $nav-link-width
+    padding: $nav-link-padding
+    margin: $nav-link-margin
+    text-align: center
+    @media screen and (min-width: 576px)
+        width: $nav-link-width-sm
+        padding: $nav-link-padding-sm
+        margin: $nav-link-margin-sm
+        font-size: $nav-link-font-size-sm
         @media screen and (min-width: 768px)
             width: $nav-link-width-md
             padding: $nav-link-padding-md
@@ -191,15 +213,17 @@ img
         height: $o-card-min-height-xl
     &__title
         color: #ffffff
-        font-size: 18px
+        font-size: $s-card-title-size
+        margin: 10px
     &__text 
         color: $card-text-color
         text-align: justify
+        margin-top: 30px
     &__social-icons
         color: $card-social-icons-color
     &-img-top
-        width: $card-img-top-size
-        height: $card-img-top-size
+        width: $card-img-top-width
+        height: $card-img-top-height
         border-radius: $card-img-top-border-radius
         margin: auto
 
@@ -208,3 +232,12 @@ img
 .carousel, .carousel-inner, .carousel__img
     height: $carousel-height
 
+.bloque-background
+    width: 100%
+    height: 60px
+    display: flex 
+    align-items: center
+    justify-content: center
+    padding: 20px
+    color: #ffffff
+    font-size: 18px
