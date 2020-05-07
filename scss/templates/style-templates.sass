@@ -35,7 +35,7 @@ img
         max-width: $o-section-container-max-width
         margin: $o-section-container-margin
         padding: $o-section-container-padding
-        background-color: $o-section-container-background-color
+        // background-color: $o-section-container-background-color
         @media screen and (min-width: 576px)
             padding: $o-section-container-padding-sm
         @media screen and (min-width: 768px)
@@ -146,6 +146,7 @@ img
         display: flex
         align-items: center
         justify-content: center
+        margin: auto
         @media screen and (min-width: 576px)
             height: $navbar-nav-height-sm
         @media screen and (min-width: 768px)
@@ -156,7 +157,8 @@ img
             height: $navbar-nav-height-xl
             padding: $navbar-padding-xl
 .nav-item 
-    margin: 0 20px
+    margin: auto
+    text-align: center
 .nav-link
     color: $nav-link-color
     font-size: $nav-link-font-size
@@ -169,24 +171,24 @@ img
         padding: $nav-link-padding-sm
         margin: $nav-link-margin-sm
         font-size: $nav-link-font-size-sm
-        @media screen and (min-width: 768px)
-            width: $nav-link-width-md
-            padding: $nav-link-padding-md
-            margin: $nav-link-margin-md
-            font-size: $nav-link-font-size-md
-        @media screen and (min-width: 1024px)
-            width: $nav-link-width-lg
-            padding: $nav-link-padding-lg
-            margin: $nav-link-margin-lg
-            font-size: $nav-link-font-size-lg
-        @media screen and (min-width: 1280px)
-            width: $nav-link-width-xl
-            padding: $nav-link-padding-xl
-            margin: $nav-link-margin-xl
-            font-size: $nav-link-font-size-xl
-        &:hover
-            color: $nav-link-color
-            background-color: lighten($navbar-nav-background-color, 20%)
+    @media screen and (min-width: 768px)
+        width: $nav-link-width-md
+        padding: $nav-link-padding-md
+        margin: $nav-link-margin-md
+        font-size: $nav-link-font-size-md
+    @media screen and (min-width: 1024px)
+        width: $nav-link-width-lg
+        padding: $nav-link-padding-lg
+        margin: $nav-link-margin-lg
+        font-size: $nav-link-font-size-lg
+    @media screen and (min-width: 1280px)
+        width: $nav-link-width-xl
+        padding: $nav-link-padding-xl
+        margin: $nav-link-margin-xl
+        font-size: $nav-link-font-size-xl
+    &:hover
+        color: $nav-link-color
+        background-color: lighten($navbar-nav-background-color, 20%)
 
 /* Card */
 .card 
