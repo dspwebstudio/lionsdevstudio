@@ -22,264 +22,502 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" class="hidden" oncopy="return false" oncut="return false"
-    onpaste="return false">
+<body class="hidden">
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand p-0" href="#"><img src="dist/img/Logo/lionsdevstudio-white.png" alt="logo"></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0 d-none">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+
     <main>
 
-        <section id="carousel">
-            <div id="carouselSection" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselSection" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselSection" data-slide-to="1"></li>
-                    <li data-target="#carouselSection" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="dist/img/imagenes/c2.jpg" alt="First slide" class="carousel__img">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="dist/img/imagenes/c3.jpg" alt="Second slide" class="carousel__img">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="dist/img/imagenes/c4.jpg" alt="Third slide" class="carousel__img">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselSection" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
         <div class="o-main-container">
-            <div class="">
-                <h1 class="o-section__h1 my-5 text-center">Templete Theme - lionsdevstudio</h1>
 
-                <section id="colores" class="o-section">
-                    <div class="o-section-container bg-light">
-                        <h2 class="o-section__h2">Colores</h2>
+            <div class="d-flex">
+                <!-- Contenido -->
+                <div class="w-75" data-spy="scroll" data-target="#menu" data-offset="0">
+                    <h1 class="o-section__h1 mt-5 text-center fuente-3">Templete Theme - lionsdevstudio</h1>
+
+                    <!-- Menu -->
+                    <div class="o-section-container">
+                        <h2 class="o-section__h2 fuente-3">Menú</h2>
                         <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <div class="cuadros d-flex justify-content-start align-items-center mb-5 mt-4">
-                            <div class="container">
-                                <div class="row mx-auto">
-                                    <div class="col-md-4">
-                                        <div class="o-cuadrado s-background-primary mr-3">color-primary</div>
+                        <header>
+                            <nav class="navbar navbar-expand-lg ">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand p-0 ml-5" href="#"><img
+                                            src="dist/img/Logo/lionsdevstudio-white.png" alt="logo"></a>
+                                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                                        data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="#">Home <span
+                                                        class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Dropdown</a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                                    <a class="dropdown-item" href="#">Action 1</a>
+                                                    <a class="dropdown-item" href="#">Action 2</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <form class="form-inline my-2 my-lg-0 d-none">
+                                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                            <button class="btn btn-outline-success my-2 my-sm-0"
+                                                type="submit">Search</button>
+                                        </form>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="o-cuadrado s-background-secondary mr-3"> color-secondary</div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="o-cuadrado s-background-tertiary text-dark"> color-tertiary</div>
+                                </div>
+                            </nav>
+                        </header>
+                    </div>
+                    <!-- Menu -->
+
+                    <!-- Colores -->
+                    <section id="colores" class="o-section">
+                        <div class="o-section-container">
+                            <h2 class="o-section__h2 fuente-3">Colores</h2>
+                            <hr class="o-line s-background-tertiary mb-5 w-50">
+                            <div class="my-5 s-primary-lighten-1 py-4">
+                                <div class="container">
+                                    <div class="row mx-auto">
+                                        <div class="col-md-4 mx-auto">
+                                            <div class="o-cuadrado s-background-primary">color-primary</div>
+                                        </div>
+                                        <div class="col-md-4 mx-auto">
+                                            <div class="o-cuadrado s-background-secondary"> color-secondary</div>
+                                        </div>
+                                        <div class="col-md-4 mx-auto">
+                                            <div class="o-cuadrado s-background-tertiary text-dark"> color-tertiary
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div id="lighten">
+                                <div class="bloque-background s-primary-lighten-1">s-primary-lighten-1</div>
+                                <div class="bloque-background s-primary-lighten-2">s-primary-lighten-2</div>
+                                <div class="bloque-background s-primary-lighten-3">s-primary-lighten-3</div>
+                                <div class="bloque-background s-primary-lighten-4">s-primary-lighten-4</div>
+                                <div class="bloque-background s-primary-lighten-5">s-primary-lighten-5</div>
+                                <div class="bloque-background s-primary-lighten-6">s-primary-lighten-6</div>
+                            </div>
+                            <div id="darken" class="mt-5">
+                                <div class="bloque-background s-primary-darken-1">s-primary-darken-1</div>
+                                <div class="bloque-background s-primary-darken-2">s-primary-darken-2</div>
+                                <div class="bloque-background s-primary-darken-3">s-primary-darken-3</div>
+                                <div class="bloque-background s-primary-darken-4">s-primary-darken-4</div>
+                                <div class="bloque-background s-primary-darken-5">s-primary-darken-5</div>
+                                <div class="bloque-background s-primary-darken-6">s-primary-darken-6</div>
+                            </div>
                         </div>
-                        <div id="lighten">
-                            <div class="bloque-background s-primary-lighten-1">s-primary-lighten-1</div>
-                            <div class="bloque-background s-primary-lighten-2">s-primary-lighten-2</div>
-                            <div class="bloque-background s-primary-lighten-3">s-primary-lighten-3</div>
-                            <div class="bloque-background s-primary-lighten-4">s-primary-lighten-4</div>
-                            <div class="bloque-background s-primary-lighten-5">s-primary-lighten-5</div>
-                            <div class="bloque-background s-primary-lighten-6">s-primary-lighten-6</div>
-                        </div>
-                        <div id="darken" class="mt-5">
-                            <div class="bloque-background s-primary-darken-1">s-primary-darken-1</div>
-                            <div class="bloque-background s-primary-darken-2">s-primary-darken-2</div>
-                            <div class="bloque-background s-primary-darken-3">s-primary-darken-3</div>
-                            <div class="bloque-background s-primary-darken-4">s-primary-darken-4</div>
-                            <div class="bloque-background s-primary-darken-5">s-primary-darken-5</div>
-                            <div class="bloque-background s-primary-darken-6">s-primary-darken-6</div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                    <!-- Colores -->
 
-                <section id="lines" class="o-section my-5 ">
-                    <div class="o-section-container bg-light ">
-                        <h2 class="o-section__h2">Lineas</h2>
-                        <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <hr class="o-line w-25 s-background-primary">
-                        <hr class="o-line w-50 s-background-primary">
-                        <hr class="o-line w-75 s-background-primary">
-                        <hr class="o-line w-100 s-background-primary">
-                        <br>
-                        <hr class="o-line w-25 s-background-secondary">
-                        <hr class="o-line w-50 s-background-secondary">
-                        <hr class="o-line w-75 s-background-secondary">
-                        <hr class="o-line w-100 s-background-secondary">
-                        <br>
-                        <hr class="o-line w-25 s-background-tertiary">
-                        <hr class="o-line w-50 s-background-tertiary">
-                        <hr class="o-line w-75 s-background-tertiary">
-                        <hr class="o-line w-100 s-background-tertiary">
-                    </div>
-                </section>
+                    <!-- Fuentes -->
+                    <section id="fuentes" class="o-section">
+                        <div class="o-section-container white-text">
+                            <h2 class="o-section__h2 fuente-3">Fuentes</h2>
+                            <hr class="o-line w-50 s-background-tertiary mb-5">
+                            </hr>
+                            <h1 class="fuente-3 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                                beatae!</h1>
+                            <h2 class="o-section__h2 p-0 m-0">Lorem ipsum dolor sit amet consectetur.</h2><br>
+                            <hr class="bg-light">
+                            <p class="o-section__paragraph lead white-text pt-4">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quae asperiores delectus iste? Fugiat quis, sapiente alias praesentium
+                                rerum vitae optio eaque veritatis odio voluptate inventore libero, quo vel atque illo
+                                ipsum provident amet rem, enim temporibus? Consequatur delectus error natus.</p>
+                            <br>
+                            <a href="#" class="btn btn-outline-light">Text</a>
+                        </div>
+                    </section>
 
-                <section id="titulos" class="o-section my-5 ">
-                    <div class="o-section-container bg-light">
-                        <h2 class="o-section__h2">Títulos</h2>
-                        <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <h1 class="o-section__h1">h1 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h1</span></h1>
-                        <h2 class="o-section__h2">h2 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h2</span></h2>
-                        <h3 class="o-section__h3">h3 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h3</span></h3>
-                        <h4 class="o-section__h4">h4 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h4</span></h4>
-                        <h5 class="o-section__h5">h5 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h5</span></h5>
-                        <h6 class="o-section__h6">h6 <span
-                                class="title-description ml-5 text-dark font-weight-light">.o-section__h6</span></h6>
-                        <div class="p-3 mt-5 s-primary-lighten-1">
-                            <div class="container-fluid p-5">
-                                <h2 class="o-section__h3">Título Ejemplo</h2>
+                    <!-- Lineas -->
+                    <section id="lineas" class="o-section">
+                        <div class="o-section-container">
+                            <h2 class="o-section__h2 fuente-3">Lineas</h2>
+                            <hr class="o-line w-50 s-background-tertiary mb-5">
+
+                            <!-- lineas primarias -->
+                            <div class="my-5 pt-5">
+                                <hr class="o-line w-25 s-background-primary">
+                                <hr class="o-line w-50 s-background-primary">
+                                <hr class="o-line w-75 s-background-primary">
+                                <hr class="o-line w-100 s-background-primary">
+                                <br>
+                                <div class="w-75 mx-auto">
+                                    <pre
+                                        class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                        <code style="margin: 0; padding: 0; font-size: 20px;">&lt;hr class="o-line w-50 s-background-primary"&gt;&lt;/hr&gt;</code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <!-- lineas primarias -->
+
+                            <!-- lineas secundarias -->
+                            <div class="my-5">
+                                <hr class="o-line w-25 s-background-secondary">
                                 <hr class="o-line w-50 s-background-secondary">
+                                <hr class="o-line w-75 s-background-secondary">
+                                <hr class="o-line w-100 s-background-secondary">
+                                <br>
+                                <div class="w-75 mx-auto">
+                                    <pre
+                                        class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                        <code style="margin: 0; padding: 0; font-size: 20px;">&lt;hr class="o-line w-50 s-background-secondary"&gt;&lt;/hr&gt;</code>
+                                    </pre>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-3 mt-5 text-center s-primary-lighten-1">
-                            <div class="container-fluid p-5">
-                                <h2 class="o-section__h3">Título Ejemplo</h2>
-                                <hr class="o-line w-50 s-background-tertiary mx-auto">
+                            <!-- lineas secundarias -->
+
+                            <!-- lineas terciarias -->
+                            <div class="mt-5">
+                                <hr class="o-line w-25 s-background-tertiary">
+                                <hr class="o-line w-50 s-background-tertiary">
+                                <hr class="o-line w-75 s-background-tertiary">
+                                <hr class="o-line w-100 s-background-tertiary">
+                                <div class="w-75 mx-auto">
+                                    <pre
+                                        class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                        <code style="margin: 0; padding: 0; font-size: 20px;">&lt;hr class="o-line w-50 s-background-tertiary"&gt;&lt;/hr&gt;</code>
+                                    </pre>
+                                </div>
                             </div>
+                            <!-- lineas terciarias -->
+
                         </div>
-                        <div class="s-background-secondary p-3 mt-5">
-                            <div class="container-fluid p-5">
-                                <h2 class="o-section__h3 text-white">Título Ejemplo</h2>
-                                <hr class="o-line w-50 bg-light">
+                    </section>
+                    <!-- Lineas -->
+
+
+                    <!-- Titulos -->
+                    <section id="titulos" class="o-section">
+                        <div class="o-section-container">
+                            <h2 class="o-section__h2 fuente-3">Títulos</h2>
+                            <hr class="o-line s-background-tertiary mb-5 w-50">
+                            <h1 class="o-section__h1">h1 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h1</span>
+                            </h1>
+                            <h2 class="o-section__h2">h2 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h2</span>
+                            </h2>
+                            <h3 class="o-section__h3">h3 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h3</span>
+                            </h3>
+                            <h4 class="o-section__h4">h4 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h4</span>
+                            </h4>
+                            <h5 class="o-section__h5">h5 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h5</span>
+                            </h5>
+                            <h6 class="o-section__h6">h6 <span
+                                    class="title-description ml-5 text-dark font-weight-light">.o-section__h6</span>
+                            </h6>
+                            <div class="p-3 mt-5 s-primary-lighten-1">
+                                <div class="container-fluid p-5">
+                                    <h2 class="o-section__h2">Título Ejemplo</h2>
+                                    <hr class="o-line w-50 s-background-secondary">
+                                </div>
                             </div>
-                        </div>
-                        <div class="s-background-secondary p-3 mt-5 text-center">
-                            <div class="container-fluid p-5">
-                                <h2 class="o-section__h3 text-white">Título Ejemplo</h2>
-                                <hr class="o-line w-50 s-background-tertiary mx-auto">
+                            <div class="p-3 mt-5 text-center s-primary-lighten-1">
+                                <div class="container-fluid p-5">
+                                    <h2 class="o-section__h2">Título Ejemplo</h2>
+                                    <hr class="o-line w-50 s-background-tertiary mx-auto">
+                                </div>
+                            </div>
+                            <div class="p-3 mt-5 s-primary-lighten-1">
+                                <div class="container-fluid p-5">
+                                    <h2 class="o-section__h2 text-white">Título Ejemplo</h2>
+                                    <hr class="o-line w-50 bg-light">
+                                </div>
+                            </div>
+                            <div class="p-3 mt-5 text-center s-primary-lighten-1">
+                                <div class="container-fluid p-5">
+                                    <h2 class="o-section__h2 text-white">Título Ejemplo</h2>
+                                    <hr class="o-line w-50 s-background-tertiary mx-auto">
+                                </div>
                                 <br>
                             </div>
+                            <pre class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden mt-5">
+                                <code style="font-size: 20px;">&lt;div class="s-background-secondary p-3 mt-5 text-center"&gt;&lt;/div&gt;</code>
+                            </pre>
+                            <pre class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                <code style="margin: 0; padding: 0; font-size: 20px;">&lt;h2 class="o-section__h2 text-white"&gt;&lt;/h2&gt;</code>
+                            </pre>
+                            <pre class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                <code style="margin: 0; padding: 0; font-size: 20px;">&lt;hr class="o-line w-50 s-background-tertiary mx-auto"&gt;&lt;/hr&gt;</code>
+                            </pre>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                    <!-- Titulos -->
 
-                <section id="parrafos" class="o-section mt-5 ">
-                    <div class="o-section-container bg-light">
-                        <h2 class="o-section__h2">Párrafos</h2>
-                        <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <h3 class="o-section__h3  mb-4">Normal </h3>
-                        <p class="o-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-                            exercitationem dolorum iure veritatis, harum nobis accusantium, consequatur, id quae nihil
-                            quaerat
-                            delectus optio numquam esse! Dolor saepe asperiores unde cumque.</p> <br>
-                        <h3 class="o-section__h3 mb-4">Lead</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa exercitationem
-                            dolorum
-                            iure veritatis, harum nobis accusantium, consequatur, id quae nihil quaerat delectus optio
-                            numquam
-                            esse! Dolor saepe asperiores unde cumque.</p>
-                    </div>
-                </section>
 
-                <!-- Cards -->
-                <section id="cards" class="o-section mt-5 ">
-                    <div class="o-section-container bg-light">
-                        <h2 class="o-section__h2">Cards</h2>
-                        <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <div class="card ">
-                            <img class="card-img-top" src="dist/img/imagenes/c5.jpeg" alt="">
-                            <div class="card-body">
-                                <h3 class="card__title">Samantha Adams</h3>
-                                <h4 class="card__title">Diseñadora Web</h4>
-                                <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-                                    fugiat et, delectus omnis placeat incidunt, vel rem illum doloremque totam labore
-                                    aperiam minima veritatis dolor modi maxime esse blanditiis eligendi?</p>
+                    <!-- Parrafos -->
+                    <section id="parrafos" class="o-section">
+                        <div class="o-section-container">
+                            <h2 class="o-section__h2 fuente-3">Párrafos</h2>
+                            <hr class="o-line s-background-tertiary mb-5 w-50">
+                            <h3 class="o-section__h3  mb-4">Normal </h3>
+                            <p class="o-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Culpa
+                                exercitationem dolorum iure veritatis, harum nobis accusantium, consequatur, id quae
+                                nihil
+                                quaerat
+                                delectus optio numquam esse! Dolor saepe asperiores unde cumque.</p> <br>
+                            <div class="w-75 mx-auto mb-5">
+                                <pre
+                                    class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                    <code style="margin: 0; padding: 0; font-size: 20px;">&lt;p class="o-section__paragraph"&gt;&lt;/p&gt;</code>
+                                </pre>
+                            </div>
+                            <h3 class="o-section__h3 mb-4">Lead</h3>
+                            <p class="lead white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                exercitationem dolorum iure veritatis, harum nobis accusantium, consequatur, id quae
+                                nihil quaerat delectus optio numquam esse! Dolor saepe asperiores unde cumque.</p><br>
+                            <div class="w-75 mx-auto mb-5">
+                                <pre
+                                    class="ml-auto white-text font-weight-bold p-4 bg-dark flex-center overflow-hidden">
+                                    <code style="margin: 0; padding: 0; font-size: 20px;">&lt;p class="lead"&gt;&lt;/p&gt;</code>
+                                </pre>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Cards -->
+                    </section>
+                    <!-- Parrafos -->
 
-                <!-- Carousel -->
-                <section id="carousel" class="mt-5">
-                    <div class="o-section-container bg-light">
-                        <h2 class="o-section__h2">Carousel</h2>
-                        <hr class="o-line s-background-tertiary mb-5 w-50">
-                        <div id="carouselId" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselId" data-slide-to="1"></li>
-                                <li data-target="#carouselId" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img src="dist/img/imagenes/c2.jpg" alt="First slide" class="carousel__img">
+
+                    <!-- Cards -->
+                    <section id="cards" class="o-section">
+                        <div class="o-section-container">
+                            <h2 class="o-section__h2 fuente-3">Cards</h2>
+                            <hr class="o-line s-background-tertiary mb-5 w-50">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card ">
+                                        <img class="card-img-top" src="dist/img/imagenes/c5.jpeg" alt="">
+                                        <div class="card-body">
+                                            <h3 class="card__title">Samantha Adams</h3>
+                                            <h4 class="card__title">Diseñadora Web</h4>
+                                            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit.
+                                                Suscipit
+                                                fugiat et, delectus omnis placeat incidunt, vel rem illum doloremque
+                                                totam
+                                                labore
+                                                aperiam minima veritatis dolor modi maxime esse blanditiis eligendi?</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="dist/img/imagenes/c3.jpg" alt="Second slide" class="carousel__img">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="dist/img/imagenes/c4.jpg" alt="Third slide" class="carousel__img">
+                                <div class="col-md-6 bg-dark">
+                                    <div class="flex-center flex-column text-center">
+                                        <pre
+                                            class="ml-auto white-text font-weight-bold mx-auto bg-dark flex-center overflow-hidden">
+                                            <code style="margin: 0; padding: 0; font-size: 20px;">&lt;img class="card-img-top"&gt;&lt;/img&gt</code>
+                                        </pre>
+                                        <pre
+                                            class="ml-auto white-text font-weight-bold mx-auto bg-dark flex-center overflow-hidden">
+                                            <code style="margin: 0; padding: 0; font-size: 20px;">&lt;h3 class="card__title"&gt;&lt;/h3&gt</code>
+                                        </pre>
+                                        <pre
+                                            class="ml-auto white-text font-weight-bold mx-auto bg-dark flex-center overflow-hidden">
+                                            <code style="margin: 0; padding: 0; font-size: 20px;">&lt;p class="card__text"&gt;&lt;/p&gt</code>
+                                        </pre>
+                                    </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
-                    </div>
-                </section>
-                <!-- Carousel -->
+                    </section>
+                    <!-- Cards -->
 
+                    <!-- Carousel -->
+                    <section id="carousel" class="">
+                        <div class="o-section-container">
+                            <!-- Title -->
+                            <h2 class="o-section__h2 fuente-3">Carousel</h2>
+                            <hr class="o-line s-background-tertiary mb-5 w-50">
+                            <!-- Title -->
+
+                            <!-- Carousel -->
+                            <div id="carouselId" class="carousel slide mx-auto mt-5" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselId" data-slide-to="1"></li>
+                                    <li data-target="#carouselId" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="dist/img/imagenes/c2.jpg" alt="First slide" class="carousel__img">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="dist/img/imagenes/c3.jpg" alt="Second slide" class="carousel__img">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="dist/img/imagenes/c4.jpg" alt="Third slide" class="carousel__img">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel -->
+
+                        </div>
+                    </section>
+                    <!-- Carousel -->
+
+                    <!-- Contacto -->
+                    <div id="contacto" class="contacto">
+                        <!-- Contenedor -->
+                        <div class="o-section-container">
+                            <!-- Title -->
+                            <h2 class="o-section__h2 fuente-3">Contacto</h2>
+                            <hr class="o-line w-50 s-background-tertiary mb-5">
+                            </hr>
+                            <!-- Title -->
+
+                            <!-- Contenido -->
+                            <div class="formulario">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <!-- Formulario -->
+                                        <div class="col-md-7 col-lg-9 p-5 s-primary-darken-6">
+                                            <div class="white-text">
+                                                <!-- Titulo -->
+                                                <h3 class="o-section__h3 fuente-3">Formulario</h3>
+                                                <hr class="o-line w-50 white mb-5">
+                                                </hr>
+                                                <!-- ./Titulo -->
+
+                                                <!-- Contenido -->
+                                                <form action="mail.php" target="_blank">
+                                                    <!-- Nombre & Correo  -->
+                                                    <div class="row my-2">
+                                                        <!-- Nombre  -->
+                                                        <div class="col-md-6">
+                                                            <label for="name" class="form-text">Nombre</label>
+                                                            <input type="text" class="px-4 py-2 w-100" placeholder=""
+                                                                id="name">
+                                                        </div>
+                                                        <!-- Nombre  -->
+
+                                                        <!-- Correo Electronico  -->
+                                                        <div class="col-md-6">
+                                                            <label for="email" class="form-text">Correo
+                                                                Electronico</label>
+                                                            <input type="email" class="px-4 py-2 w-100" placeholder=""
+                                                                id="email">
+                                                        </div>
+                                                        <!-- Correo Electronico  -->
+                                                    </div>
+                                                    <!-- ./Nombre & Correo  -->
+
+                                                    <!-- Asunto  -->
+                                                    <div class="row my-2">
+                                                        <div class="col-md-12">
+                                                            <!-- Nombre  -->
+                                                            <label for="subject" class="form-text">Asunto</label>
+                                                            <input type="text" class="px-4 py-2 w-100" placeholder=""
+                                                                id="subject">
+                                                        </div>
+                                                    </div>
+                                                    <!-- ./Asunto  -->
+
+                                                    <!-- Mensaje  -->
+                                                    <div class="row my-2">
+                                                        <div class="col-md-12">
+                                                            <label for="message" class="form-text">Mensaje</label>
+                                                            <textarea type="text" class="p-4 w-100" placeholder=""
+                                                                id="message"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <!-- ./Mensaje  -->
+
+                                                    <!-- Boton Enviar -->
+                                                    <div class="mt-3">
+                                                        <input type="submit"
+                                                            class="btn s-background-tertiary text-dark"></input>
+                                                    </div>
+                                                    <!-- ./Boton Enviar -->
+                                                </form>
+                                                <!-- ./Contenido -->
+                                            </div>
+                                        </div>
+                                        <!-- ./Formulario -->
+
+                                        <!-- Info -->
+                                        <div class="col-md-5 col-lg-3 s-primary-darken-4 text-center">
+                                            <div class="flex-center flex-column white-text">
+                                                <h3 class="o-section__h3 fuente-3"></h3>
+                                                <br>
+                                                <div class="mb-4">
+                                                    <i class="fas fa-map-marked-alt fa-2x"></i>
+                                                    <p class="my-3">Morelia, Michoacán, México</p>
+                                                </div>
+                                                <div class="my-4">
+                                                    <i class="fas fa-phone fa-2x"></i>
+                                                    <p class="my-3">+55 1 443 3470722</p>
+                                                </div>
+                                                <div class="my-4">
+                                                    <i class="far fa-envelope fa-2x"></i>
+                                                    <p class="my-3">contacto@lionsdevstudio.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Info -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Contenido -->
+                        </div>
+                        <!-- Contenedor -->
+                    </div>
+                    <!-- Contacto -->
+
+                </div>
+                <!-- Contenido -->
+
+                <!-- Navegador -->
+                <div class="w-25 s-primary-darken-3 h-100 d-block" style="height: 100vh; position: fixed; right: 0;">
+                    <div class="logo px-5 pt-3">
+                        <img src="dist/img/Logo/lionsdevstudio-white.png" class="mx-auto" alt="" srcset="">
+                    </div>
+                    <ul id="menu" class="text-center">
+                        <a href="#colores" class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Colores</a>
+                        <a href="#fuentes" class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Fuentes</a>
+                        <a href="#lineas" class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Lineas</a>
+                        <a href="#titulos" class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Titulos</a>
+                        <a href="#parrafos"
+                            class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Parrafos</a>
+                        <a href="#cards" class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Cards</a>
+                        <a href="#carousel"
+                            class="btn btn-primary py-4 my-5 d-block w-50 mx-auto rounded-lg">Carousel</a>
+                    </ul>
+                </div>
+                <!-- Navegador -->
             </div>
-        </div>
 
+        </div>
 
     </main>
 
@@ -294,7 +532,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="dist/js/mdb.min.js"></script>
     <!-- Smooth Scroll -->
-    <script type="text/javascript" src="dist/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="dist/js/smooth-scroll_estilos.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>

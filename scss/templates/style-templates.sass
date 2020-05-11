@@ -3,9 +3,6 @@
 
 
 
-
-
-
 /*===================== GENERIC =====================*/
 
 *
@@ -17,6 +14,8 @@
 
 body
     background-color: $s-body-background-color
+    font-family: 'Lato', sans-serif
+    font-family: 'Titillium Web', sans-serif
 
 main 
     max-width: 100%
@@ -28,11 +27,11 @@ img
     height: 100%
     object-fit: cover
 
-/*===================== OBJECTS =====================*/
+// Section
 
 .o-section
     &-container
-        border-radius: 20px 
+        // border-radius: 20px 
         max-width: $o-section-container-max-width
         margin: $o-section-container-margin
         padding: $o-section-container-padding
@@ -50,51 +49,51 @@ img
         font-size: $o-section__h1-font-size
         color: $o-section__h1-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
     &__h2
         font-size: $o-section__h2-font-size
         color: $o-section__h2-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
 
     &__h3
         font-size: $o-section__h3-font-size
         color: $o-section__h3-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
 
     &__h4
         font-size: $o-section__h4-font-size
         color: $o-section__h4-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
 
     &__h5
         font-size: $o-section__h5-font-size
         color: $o-section__h5-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
 
     &__h6
         font-size: $o-section__h6-font-size
         color: $o-section__h6-color
         font-weight: $o-section-title-font-weight
-        font-family: $o-section-title-font-family
+        // font-family: $o-section-title-font-family
 
 
     &__paragraph
         font-size: $o-section__paragraph-font-size
         color: $o-section__paragraph-color
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 .o-line
-    height: 4px
-    margin: 10px auto 20px 0
+    height: 0.25rem
+    margin: 0.625rem auto 1.25rem 0
     transform: skew(45deg)
 
 .avatar-img
@@ -104,17 +103,17 @@ img
     margin: auto
 
 .o-cuadrado
-    width: 160px
-    height: 160px
+    width: 10rem
+    height: 10rem
     color: #ffffff
     display: flex
     align-items: center
     justify-content: center
-    font-size: 16px
+    font-size: 1rem
     text-align: center
 
 .title-description
-    font-size: 14px
+    font-size: 0.875rem
 
 /*===================== COMPONENT =====================*/
 
@@ -137,7 +136,7 @@ img
         padding: $navbar-padding-xl
     &-brand 
         color: $nav-link-color
-        font-size: 20px
+        font-size: 1.25rem
     &-toggler
         color: $nav-toggler-color
     &-nav
@@ -162,6 +161,10 @@ img
 .nav-item 
     margin: auto
     text-align: center
+a.active
+    border-bottom: 0.125rem solid yellow
+.btn-navlink
+    
 .nav-link
     color: $nav-link-color
     font-size: $nav-link-font-size
@@ -219,11 +222,20 @@ img
     &__title
         color: #ffffff
         font-size: $s-card-title-size
-        margin: 10px
+        margin: 0.625rem
     &__text 
         color: $card-text-color
         text-align: justify
-        margin-top: 30px
+        margin-top: 1.875rem
+        padding: $o-card__text-padding
+        @media screen and (min-width: 576px)
+            padding: $o-card__text-padding-sm
+        @media screen and (min-width: 768px)
+            padding: $o-card__text-padding-md
+        @media screen and (min-width: 1024px)
+            padding: $o-card__text-padding-lg
+        @media screen and (min-width: 1280px)
+            padding: $o-card__text-padding-xl
     &__social-icons
         color: $card-social-icons-color
     &-img-top
@@ -234,15 +246,48 @@ img
 
 
 /* Carousel */ 
-.carousel, .carousel-inner, .carousel__img
+.carousel
+    width: $carousel-width
     height: $carousel-height
+.carousel-inner
+    width: $carousel-width
+    height: $carousel-height
+    display: flex
+    align-items: center
+    justify-content: center
+.carousel-item
+    width: $carousel-width
+    height: $carousel-height
+    margin-right: $carousel-item-margin-right
+    
+.carousel__img
+    width: $carousel__img-width
+    height: $carousel__img-height
 
 .bloque-background
     width: 100%
-    height: 60px
+    height: 3.75rem
     display: flex 
     align-items: center
     justify-content: center
-    padding: 20px
+    padding: 1.25rem
     color: #ffffff
-    font-size: 18px
+    font-size: 1.125rem
+
+
+.fuente-3
+    font-family: 'Lato', sans-serif
+    font-family: 'Titillium Web', sans-serif
+    font-weight: 600
+    letter-spacing: .1em
+
+
+input, textarea 
+    background-color: $s-color-theme-primary
+    color: #ffffff
+    border: none
+input:focus, textarea:focus
+    border-bottom: 3px solid $s-color-theme-tertiary
+textarea 
+    min-height: 200px
+    max-height: 200px
