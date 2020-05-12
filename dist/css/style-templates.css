@@ -247,7 +247,7 @@ img {
 }
 
 .navbar-nav {
-  background-color: #000000;
+  background-color: transparent;
   height: 78vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +303,7 @@ a.active {
   font-size: 20px;
   width: 90%;
   padding: 30px 0;
-  margin: 0;
+  margin: auto;
   text-align: center;
 }
 
@@ -311,7 +311,7 @@ a.active {
   .nav-link {
     width: 90%;
     padding: 30px 0;
-    margin: 0;
+    margin: auto;
     font-size: 20px;
   }
 }
@@ -320,32 +320,32 @@ a.active {
   .nav-link {
     width: 90%;
     padding: 30px 0;
-    margin: 0;
+    margin: auto;
     font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .nav-link {
-    width: 120px;
+    width: 130px;
     padding: 30px auto;
-    margin: 0;
+    margin: auto;
     font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .nav-link {
-    width: 120px;
+    width: 130px;
     padding: 30px auto;
-    margin: 0;
+    margin: auto;
     font-size: 1.1em;
   }
 }
 
 .nav-link:hover {
   color: #ffffff;
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0);
 }
 
 /* Card */
@@ -390,8 +390,8 @@ a.active {
 
 @media screen and (min-width: 1280px) {
   .card {
-    width: 21.875rem;
-    height: auto;
+    width: 80%;
+    height: 500px;
   }
 }
 
@@ -441,6 +441,12 @@ a.active {
   height: 100%;
   border-radius: 0;
   margin: auto;
+}
+
+.card__img {
+  width: auto;
+  height: 500px;
+  overflow: hidden;
 }
 
 /* Carousel */
