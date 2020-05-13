@@ -1,78 +1,133 @@
-@import '1-Settings/s-variables' 
-@import '1-Settings/s-colors' 
-@import '2-Tools/t-mixins' 
-@import '3-Generic/g-reset'
-@import '4-Elements/e-tags'
-@import '5-Objects/o-general-clases'
-@import '5-Objects/o-buttons'
-@import '5-Objects/o-section'
-@import '6-Components/c-navbar'
-@import '6-Components/c-carousel'
-@import '6-Components/c-welcome'
-@import '6-Components/c-about'
-@import '6-Components/c-page-footer-domicilio'
+@import 'Settings/s-variables'
+@import 'Settings/s-colors'
+@import 'Elements/e-tags'
+@import 'Components/c-navbar'
+@import 'Components/c-welcome'
+@import 'Components/c-portafolio'
+@import 'Objects/o-buttons'
+@import 'Objects/o-section'
 
-.py-6
-    padding: 100px 0
 
-.card 
-    color: #ffffff
-    margin: 0
-    width: 100%
-    height: 300px
-    .view
-        width: 100%
-        height: 300px
-        img
-            width: 100%
-            height: 300px
-
-.hr-title
-    width: 175px
-    height: 3px
-    background-color: #ffffff
+.o-line
+    height: 0.25rem
+    margin: 0.625rem auto 1.25rem 0
     transform: skew(45deg)
-    margin: 0 auto 20px 0
 
-.display-5 
-    font-size: 2.5rem
-    font-weight: 300
-    line-height: 1.2
+.avatar-img
+    width: $card-img-top-width
+    height: $card-img-top-height
+    border-radius: $card-img-top-border-radius
+    margin: auto
 
-.full-screen
-    width: 100%
-    height: 100vh
+.o-cuadrado
+    width: 10rem
+    height: 10rem
+    color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 1rem
+    text-align: center
 
-
-.blockquote-footer::before
-    color: $s-color-secondary
-
-
-.team-section, .blog
-    background-color: #fefefe
-
-/* Team */
-
-.team-section 
-    strong 
-        color: #0F4480
-
-
-
+.title-description
+    font-size: 0.875rem
+    
 .overflow-x-hidden
     overflow-x: hidden
 
-/* Footer */ 
-.page-footer
-    background-color: #212121
+/*===================== COMPONENT =====================*/
+
+
+/* Card */
+.card 
+    width: $o-card-width
+    height: $o-card-min-height
+    margin: $o-card-margin
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: $o-card-padding
+    background-color: $o-card-background-color
+    text-align: $o-card-text-align
+    @media screen and (min-width: 576px)
+        width: $o-card-width-sm
+        height: $o-card-min-height-sm
+    @media screen and (min-width: 768px)
+        width: $o-card-width-md
+        height: $o-card-min-height-md
     @media screen and (min-width: 1024px)
-        background-color: $s-color-primary
+        width: $o-card-width-lg
+        height: $o-card-min-height-lg
+    @media screen and (min-width: 1280px)
+        width: $o-card-width-xl
+        height: $o-card-min-height-xl
+    &__title
+        color: #ffffff
+        font-size: $s-card-title-size
+        margin: 0.625rem
+    &__text 
+        color: $card-text-color
+        text-align: justify
+        margin-top: 1.875rem
+        padding: $o-card__text-padding
+        @media screen and (min-width: 576px)
+            padding: $o-card__text-padding-sm
+        @media screen and (min-width: 768px)
+            padding: $o-card__text-padding-md
+        @media screen and (min-width: 1024px)
+            padding: $o-card__text-padding-lg
+        @media screen and (min-width: 1280px)
+            padding: $o-card__text-padding-xl
+    &__social-icons
+        color: $card-social-icons-color
+    &-img-top
+        width: $card-img-top-width
+        height: $card-img-top-height
+        border-radius: $card-img-top-border-radius
+        margin: auto
+    &__img
+        width: 100%
+        height: 100%
+        overflow: hidden
 
-.footer__icons
-    font-size: 30px
+ 
+
+.bloque-background
+    width: 100%
+    height: 3.75rem
+    display: flex 
+    align-items: center
+    justify-content: center
+    padding: 1.25rem
+    color: #ffffff
+    font-size: 1.125rem
 
 
-.mt-section
-    margin-top: 168px
+.fuente-3
+    font-family: 'Lato', sans-serif
+    font-family: 'Titillium Web', sans-serif
+    font-weight: 600
+    letter-spacing: .1em
 
 
+input, textarea 
+    background-color: $s-color-theme-primary
+    color: #ffffff
+    border: none
+input:focus, textarea:focus
+    border-bottom: 3px solid $s-color-theme-tertiary
+textarea 
+    min-height: 200px
+    max-height: 200px
+
+.copyright-logo
+    width: 160px
+
+
+    
+
+
+.btn
+    font-size: 20px
+    text-transform: capitalize
+    margin: 30px auto 0 auto
