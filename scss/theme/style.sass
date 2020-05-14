@@ -1,96 +1,23 @@
 @import 'Settings/s-variables'
 @import 'Settings/s-colors'
 @import 'Elements/e-tags'
+@import 'Objects/o-buttons'
+@import 'Objects/o-section'
+@import 'Objects/o-line'
+@import 'Objects/o-general-clases'
 @import 'Components/c-navbar'
 @import 'Components/c-welcome'
 @import 'Components/c-portafolio'
-@import 'Objects/o-buttons'
-@import 'Objects/o-section'
+@import 'Components/c-card'
 
 
-.o-line
-    height: 0.25rem
-    margin: 0.625rem auto 1.25rem 0
-    transform: skew(45deg)
 
-.avatar-img
-    width: $card-img-top-width
-    height: $card-img-top-height
-    border-radius: $card-img-top-border-radius
-    margin: auto
 
-.o-cuadrado
-    width: 10rem
-    height: 10rem
-    color: #ffffff
-    display: flex
-    align-items: center
-    justify-content: center
-    font-size: 1rem
-    text-align: center
-
-.title-description
-    font-size: 0.875rem
-    
-.overflow-x-hidden
-    overflow-x: hidden
 
 /*===================== COMPONENT =====================*/
 
 
-/* Card */
-.card 
-    width: $o-card-width
-    height: $o-card-min-height
-    margin: $o-card-margin
-    display: flex
-    align-items: center
-    justify-content: center
-    padding: $o-card-padding
-    background-color: $o-card-background-color
-    text-align: $o-card-text-align
-    @media screen and (min-width: 576px)
-        width: $o-card-width-sm
-        height: $o-card-min-height-sm
-    @media screen and (min-width: 768px)
-        width: $o-card-width-md
-        height: $o-card-min-height-md
-    @media screen and (min-width: 1024px)
-        width: $o-card-width-lg
-        height: $o-card-min-height-lg
-    @media screen and (min-width: 1280px)
-        width: $o-card-width-xl
-        height: $o-card-min-height-xl
-    &__title
-        color: #ffffff
-        font-size: $s-card-title-size
-        margin: 0.625rem
-    &__text 
-        color: $card-text-color
-        text-align: justify
-        margin-top: 1.875rem
-        padding: $o-card__text-padding
-        @media screen and (min-width: 576px)
-            padding: $o-card__text-padding-sm
-        @media screen and (min-width: 768px)
-            padding: $o-card__text-padding-md
-        @media screen and (min-width: 1024px)
-            padding: $o-card__text-padding-lg
-        @media screen and (min-width: 1280px)
-            padding: $o-card__text-padding-xl
-    &__social-icons
-        color: $card-social-icons-color
-    &-img-top
-        width: $card-img-top-width
-        height: $card-img-top-height
-        border-radius: $card-img-top-border-radius
-        margin: auto
-    &__img
-        width: 100%
-        height: 100%
-        overflow: hidden
 
- 
 
 .bloque-background
     width: 100%
@@ -125,9 +52,3 @@ textarea
 
 
     
-
-
-.btn
-    font-size: 20px
-    text-transform: capitalize
-    margin: 30px auto 0 auto
