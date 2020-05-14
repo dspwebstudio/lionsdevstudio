@@ -57,33 +57,33 @@
                             <a data-scroll class="nav-link  white-text font-weight-bold" href="#contacto">Contacto</a>
                         </li>
 
-                        <div class="navbar-social d-flex">
+                        <div class="d-flex">
                             <ul class="list-unstyled d-flex mx-auto ml-md-5 my-5">
                                 <!-- Skype -->
                                 <li>
                                     <a href="skype:danielperezber?chat">
-                                        <i class="fab fa-skype navbar-social-icon" aria-hidden="true"></i>
+                                        <i class="fab fa-skype navbar__social-icons" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <!-- Skype -->
                                 <!-- Whatsapp -->
                                 <li>
                                     <a href="https://wa.me/+5214433470722">
-                                        <i class="fab fa-whatsapp ml-4 navbar-social-icon" aria-hidden="true"></i>
+                                        <i class="fab fa-whatsapp ml-4 navbar__social-icons" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <!-- Whatsapp -->
                                 <!-- Correo Electronico -->
                                 <li>
                                     <a href="mailto:danielperezber@outlook.com">
-                                        <i class="far fa-envelope ml-4 navbar-social-icon" aria-hidden="true"></i>
+                                        <i class="far fa-envelope ml-4 navbar__social-icons" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <!-- Correo Electronico -->
                                 <!-- Telefono -->
                                 <li>
                                     <a href="tel:+5214433470722">
-                                        <i class="fas fa-phone ml-4 navbar-social-icon"></i>
+                                        <i class="fas fa-phone ml-4 navbar__social-icons"></i>
                                     </a>
                                 </li>
                                 <!-- Telefono -->
@@ -468,19 +468,15 @@
             <div class="p-5">
 
                 <!-- Section heading -->
-                <h2 class="o-section__h2 fuente-3 text-center">Articulos Recientes</h2>
+                <h2 class="o-section__h2 text-center">Articulos Recientes</h2>
                 <hr class="o-line w-50 s-background-tertiary mx-auto mb-5"></hr>
+                
                 <!-- Section description -->
-                <p class="text-center w-responsive mx-auto mb-5 lead">Duis aute irure dolor in reprehenderit in
-                    voluptate
-                    velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                    qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-center w-responsive mx-auto mb-5 lead white-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla riatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <!-- Articulo -->
                 <div class="container">
-                    <article class="article row bg-light p-3 rounded shadow-lg">
+                    <article class="article row bg-light px-3 py-4 rounded shadow-lg">
 
                         <!-- Imagen -->
                         <div class="col-lg-5">
@@ -517,7 +513,7 @@
                                 <span class="article__date">19/08/2018</span>
                             </p>
                             <!-- Read more button -->
-                            <a class="btn btn--secondary s-border--dark ml-0 mt-4">Leer más</a>
+                            <a class="btn btn--yellow text-dark mt-4">Leer más</a>
 
                         </div>
                         <!-- Texto -->
@@ -536,13 +532,11 @@
             <div class="o-section-container">
 
                 <!--Section heading-->
-                <h2 class="display-4 mt-5 mb-0 mb-md-5 white-text text-center fo white-text font-weight-bold">
-                    Contáctanos</h2>
+                <h2 class="o-section__h2">Contacto</h2>
+                <hr class="o-line w-50 s-background-tertiary mr-auto">
 
                 <!--Section description-->
-                <p data-aos="fade-left" data-aos-duration="1500" class="text-center mx-auto mb-5 lead px-5">¿Tiene usted
-                    alguna pregunta? Por favor no dude en
-                    contactarnos directamente. Nuestro equipo volverá a usted dentro de cuestión de horas para ayudarlo.
+                <p data-aos="fade-left" data-aos-duration="1500" class="text-center mx-auto mb-5 lead px-5 white-text">¿Tiene usted alguna pregunta? Por favor no dude en contactarnos directamente. Nuestro equipo volverá a usted dentro de cuestión de horas para ayudarlo.
                 </p>
 
                 <!-- Contenido -->
@@ -550,18 +544,18 @@
                     <div class="container-fluid">
                         <div class="row">
                             <!-- Formulario -->
-                            <div class="col-md-7 col-lg-9 p-5 s-primary-darken-6">
-                                <div class="white-text">
+                            <div class="col-md-12 col-lg-9 px-4 py-5   blue-gradient">
+                                <div class="">
                                     <!-- Titulo -->
                                     <h3 class="o-section__h3 fuente-3">Formulario</h3>
-                                    <hr class="o-line w-50 white mb-5 mr-auto">
+                                    <hr class="o-line w-50 s-background-tertiary mr-auto">
                                     </hr>
                                     <!-- ./Titulo -->
 
                                     <!-- Contenido -->
                                     <form action="mail.php" target="_blank">
                                         <!-- Nombre & Correo  -->
-                                        <div class="row my-2">
+                                        <div class="row mb-2">
                                             <!-- Nombre  -->
                                             <div class="col-md-6">
                                                 <label for="name" class="form-text">Nombre</label>
@@ -599,8 +593,8 @@
                                         <!-- ./Mensaje  -->
 
                                         <!-- Boton Enviar -->
-                                        <div class="mt-3">
-                                            <input type="submit" class="btn s-background-tertiary text-dark"></input>
+                                        <div class="mt-3 flex-center">
+                                            <input type="submit" class="btn btn--yellow border-dark"></input>
                                         </div>
                                         <!-- ./Boton Enviar -->
                                     </form>
@@ -610,7 +604,7 @@
                             <!-- ./Formulario -->
 
                             <!-- Info -->
-                            <div class="col-md-5 col-lg-3 s-primary-darken-4 text-center">
+                            <div class="col-md-12 col-lg-3 s-primary-darken-4 text-center mt-5 mt-lg-0 py-5">
                                 <div class="flex-center flex-column white-text">
                                     <h3 class="o-section__h3 fuente-3"></h3>
                                     <br>

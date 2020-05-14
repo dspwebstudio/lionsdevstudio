@@ -28,18 +28,22 @@
             height: $navbar-nav-height-sm
             padding: $navbar-padding-sm
         @media screen and (min-width: 768px)
+            display: flex
+            flex-direction: row
             height: $navbar-nav-height-md
             padding: $navbar-padding-md
         @media screen and (min-width: 1024px)
+            display: flex
+            flex-direction: row
             height: $navbar-nav-height-lg
             padding: $navbar-padding-lg
         @media screen and (min-width: 1280px)
             height: $navbar-nav-height-xl
             padding: $navbar-padding-xl
     &__img
-        width: 100%
+        width: 250px
         @media screen and (min-width: 576px)
-            width: 130px
+            width: 250px
         @media screen and (min-width: 768px)
             width: 330px
         @media screen and (min-width: 1024px)
@@ -47,6 +51,21 @@
         @media screen and (min-width: 1280px)
             width: 330px
             margin-left: 50px
+    &__social-icons
+        font-size: $navbar-social-icons-font-size
+        color: $navbar-social-icons-color
+        @media screen and (min-width: 576px)
+            font-size: $navbar-social-icons-font-size-sm
+            color: $navbar-social-icons-color-sm
+        @media screen and (min-width: 768px)
+            font-size: $navbar-social-icons-font-size-md
+            color: $navbar-social-icons-color-md
+        @media screen and (min-width: 1024px)
+            font-size: $navbar-social-icons-font-size-lg
+            color: $navbar-social-icons-color-lg
+        @media screen and (min-width: 1240px)
+            font-size: $navbar-social-icons-font-size-xl
+            color: $navbar-social-icons-color-xl
 .nav
     &-item 
         margin: auto
@@ -81,5 +100,8 @@
         &:hover
             color: $nav-link-color
             background-color: lighten($navbar-nav-background-color, 20%)
+
 a.active
+    padding: 10px
+    transition: all 0.6s
     border-bottom: 0.125rem solid yellow
