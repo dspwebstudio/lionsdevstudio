@@ -287,6 +287,11 @@ textarea {
           transform: skew(45deg);
 }
 
+.o-line--footer {
+  width: 75%;
+  background-color: #fff;
+}
+
 /*======================= GENERAL CSS =======================*/
 .o-cuadrado {
   width: 10rem;
