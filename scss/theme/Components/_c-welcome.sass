@@ -1,50 +1,27 @@
 /* ======================== WELCOME.SASS ==========================*/
 
 /* ------------------ Welcome Tablets and Up -------------------- */
-.welcome
-    height: auto
-    background-color: #000000
-    &__title
-        color: #ffffff
-
-.section
-    width: 100%
-    height: 30vh
-    cursor: pointer
-    display: flex
-    align-items: center
-    flex-direction: column 
-    justify-content: center
-    &-view
-        width: 100%
+.welcome-title-section
+    height: 89vh
+    @media screen and (min-width: 576px)
+        height: 47vh
+    &__img 
         height: 100%
-        &__img
-            width: 100%
-            height: 100%
-            overflow: hidden
+    &__h1
+        text-align: center
+        color: #ffffff
+        font-weight: bold
 
-    &-welcome
-        width: 100%
-        height: 59vh
-        cursor: pointer
-        &-view
-            width: 100%
-            height: 100%
-        @media screen and (min-width:768)
-            height: 59vh
-        &__img
-            width: 100%
-            height: 100%
-
-    &-mask
-        display: flex 
-        flex-direction: column 
-        justify-content: center
-        align-items: center
-        padding: 1.5rem
-        &__title
-            color: #ffffff
-
+.section-view
+    height: 40vh
+    @media screen and (min-width: 576px)
+            height: 23vh
+    &__img
+        height: 100%
+    &__mask
+        height: 40vh
+        @media screen and (min-width: 576px)
+            height: 23vh
 
 /* ------------------ Welcome Smartphone -------------------- */
 
