@@ -9,14 +9,14 @@ body
     overflow-x: hidden
 
 main 
-    max-width: 1100px
+    width: $e-main-width
     margin: $e-main-margin-top auto auto
     background-color: $e-main-background-color
     overflow-x: hidden
-    @media screen and ( min-width: 1400px)
-        max-width: 1280px
-    @media screen and ( min-width: 1680px)
-        max-width: 1540px
+    @media screen and ( min-width: 1024px)
+        max-width: $e-main-width-lg
+    @media screen and ( min-width: 1240px)
+        max-width: $e-main-width-xl
 
 img 
     width: 100%

@@ -1,10 +1,15 @@
 /* ======================== WELCOME.SASS ==========================*/
 
-/* ------------------ Welcome Tablets and Up -------------------- */
 .welcome-title-section
-    height: 89vh
+    height: $welcome-title-section-height-sections
     @media screen and (min-width: 576px)
-        height: 47vh
+        height: $welcome-title-section-height-sections-sm
+    @media screen and (min-width: 768px)
+        height: $welcome-title-section-height-sections-md
+    @media screen and (min-width: 1024px)
+        height: $welcome-title-section-height-sections-lg
+    @media screen and (min-width: 1240px)
+        height: $welcome-title-section-height-sections-xl
     &__img 
         height: 100%
     &__h1
@@ -13,15 +18,32 @@
         font-weight: bold
 
 .section-view
-    height: 40vh
+    height: $welcome-section-view-height-sections
     @media screen and (min-width: 576px)
-            height: 23vh
+        height: $welcome-section-view-height-sections-sm
+    @media screen and (min-width: 768px)
+        height: $welcome-section-view-height-sections-md
+    @media screen and (min-width: 1024px)
+        height: $welcome-section-view-height-sections-lg
+    @media screen and (min-width: 1240px)
+        height: $welcome-section-view-height-sections-xl
+
     &__img
         height: 100%
+
     &__mask
-        height: 40vh
+        height: $welcome-section-view-height-sections
+
+        &-h3
+            font-weight: 500
         @media screen and (min-width: 576px)
-            height: 23vh
+            height: $welcome-section-view-height-sections-sm
+        @media screen and (min-width: 768px)
+            height: $welcome-section-view-height-sections-md
+        @media screen and (min-width: 1024px)
+            height: $welcome-section-view-height-sections-lg
+        @media screen and (min-width: 1240px)
+            height: $welcome-section-view-height-sections-xl
 
 /* ------------------ Welcome Smartphone -------------------- */
 
