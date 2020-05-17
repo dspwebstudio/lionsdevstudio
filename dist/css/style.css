@@ -120,6 +120,7 @@ input, textarea {
   border-left: 3px solid #0F4480;
   border-bottom: 3px solid #0F4480;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 input:focus, textarea:focus {
