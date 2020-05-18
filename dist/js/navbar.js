@@ -7,5 +7,8 @@ $(window).resize(function() {
             $('.navbar-brand').click(function () { 
                 $('.navbar-nav').hide();
             });
+            $('.navbar-toggler').click(function () { 
+                $('.navbar-nav').show();
+            });
     }
 });
