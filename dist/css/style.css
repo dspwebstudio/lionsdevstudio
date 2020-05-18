@@ -84,7 +84,7 @@ body {
 
 main {
   width: 100vw;
-  margin: 0 auto auto;
+  margin: 79px auto auto;
   background-color: transparent;
   overflow-x: hidden;
 }
@@ -386,15 +386,6 @@ textarea {
 .navbar-nav {
   background-color: transparent;
   height: 86vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
 }
 
@@ -471,7 +462,7 @@ textarea {
 
 .navbar__social-icons {
   font-size: 30px;
-  color: #ffffff;
+  color: #fff800;
 }
 
 @media screen and (min-width: 576px) {
@@ -511,8 +502,8 @@ textarea {
   color: #ffffff;
   font-size: 20px;
   width: 100%;
-  padding: 20px 0;
-  margin: auto;
+  padding: 10px 0;
+  margin: 0;
   text-align: center;
 }
 
