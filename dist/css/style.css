@@ -97,7 +97,7 @@ main {
 
 @media screen and (min-width: 1240px) {
   main {
-    max-width: 100vw;
+    max-width: 75%;
   }
 }
 
@@ -348,6 +348,7 @@ textarea {
 .navbar {
   background-color: #0a2c52;
   padding: 20px;
+  border-bottom: 2px solid #fffc00;
 }
 
 @media screen and (min-width: 576px) {
@@ -564,6 +565,10 @@ a.active {
 }
 
 /* ======================== WELCOME.SASS ==========================*/
+.welcome {
+  background-color: #121513;
+}
+
 .welcome-title-section {
   height: 89vh;
 }
@@ -593,7 +598,10 @@ a.active {
 }
 
 .welcome-title-section__img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .welcome-title-section__h1 {
@@ -603,6 +611,7 @@ a.active {
 }
 
 .section-view {
+  width: 100%;
   height: 42.5vh;
 }
 
@@ -631,10 +640,14 @@ a.active {
 }
 
 .section-view__img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-view__mask {
+  width: 100%;
   height: 42.5vh;
 }
 
@@ -664,38 +677,6 @@ a.active {
   .section-view__mask {
     height: 28vh;
   }
-}
-
-/* ------------------ Welcome Smartphone -------------------- */
-.welcome {
-  padding-top: 78px;
-}
-
-@media screen and (min-width: 576px) {
-  .welcome {
-    padding-top: 126px;
-  }
-}
-
-.welcome__title, .welcome__view, .welcome__mask {
-  width: 100%;
-  height: 90vh;
-}
-
-.welcome__buttons {
-  width: 40%;
-  margin: auto;
-}
-
-@media screen and (min-width: 576px) {
-  .welcome__buttons {
-    width: 60%;
-  }
-}
-
-.welcome-img {
-  width: 100%;
-  height: 90vh;
 }
 
 /* ======================== END WELCOME.SASS ==========================*/
