@@ -5,7 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, world!</title>
+    <title>lionsdevstudio</title>
+    <meta name="theme-color" content="#0F4480">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0F4480">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -30,67 +32,41 @@
     onpaste="return false">
 
     <!-- Encabezado -->
-    <header class="">
-        <nav class="navbar navbar-expand-xl fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="dist/img/Logo/lionsdevstudio-white.png" alt="logo" class="navbar__img">
-                </a>
-                <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation"> 
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mx-lg-5 flex-center">
-                        <li class="nav-item my-3">
-                            <a data-scroll class="nav-link font-weight-bold js-nav-click" href="#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a data-scroll class="nav-link font-weight-bold js-nav-click"
-                                href="#portafolio">Portafolio</a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a data-scroll class="nav-link font-weight-bold js-nav-click" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a data-scroll class="nav-link  font-weight-bold js-nav-click" href="#contacto">Contacto</a>
-                        </li>
+    <header>
+        <nav class="navbar navbar-expand-lg p-2 py-lg-3 fixed-top navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="dist/img/Logo/lionsdevstudio-white.png" alt="lionsdevstudio logo" class="navbar__img">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mt-2 mt-lg-0 flex-center">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link js-nav-link-click" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link js-nav-link-click" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link js-nav-link-click" href="#contacto">Contacto</a>
+                    </li>
+                    <!-- ./Links -->
 
-                        <div class="mt-5">
-                            <ul class="list-unstyled flex-center">
-                                <!-- Skype -->
-                                <li>
-                                    <a href="skype:danielperezber?chat">
-                                        <i class="fab fa-skype ml-4 navbar__social-icons" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <!-- Skype -->
-                                <!-- Whatsapp -->
-                                <li>
-                                    <a href="https://wa.me/+5214433470722">
-                                        <i class="fab fa-whatsapp ml-4 navbar__social-icons" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <!-- Whatsapp -->
-                                <!-- Correo Electronico -->
-                                <li>
-                                    <a href="mailto:danielperezber@outlook.com">
-                                        <i class="far fa-envelope ml-4 navbar__social-icons" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <!-- Correo Electronico -->
-                                <!-- Telefono -->
-                                <li>
-                                    <a href="tel:+5214433470722">
-                                        <i class="fas fa-phone ml-4 navbar__social-icons"></i>
-                                    </a>
-                                </li>
-                                <!-- Telefono -->
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
+                    <!-- Social Icons -->
+                    <form class="mt-5 white-text">
+                        <i class="fab fa-facebook-f fa-2x mr-3"></i>
+                        <i class="fab fa-linkedin fa-2x mr-3"></i>
+                        <i class="fab fa-skype fa-2x mr-3"></i>
+                        <i class="fab fa-whatsapp fa-2x mr-3"></i>
+                    </form>
+                    <!-- ./Social Icons -->
+                </ul>
+                
+
             </div>
         </nav>
     </header>
@@ -109,7 +85,8 @@
                         <div class="welcome-title-section">
                             <!-- Titulo -->
                             <div class="view flex-center flex-column">
-                                <img src="dist/img/imagenes/c8.jpeg" class="welcome-title-section__img" alt="" srcset="">
+                                <img src="dist/img/imagenes/c8.jpeg" class="welcome-title-section__img" alt=""
+                                    srcset="">
                                 <div class="welcome__mask mask rgba-black-strong flex-center flex-column p-5">
                                     <h1 class="welcome-title-section__h1"> Diseño & Desarrollo Web</h1>
                                 </div>
@@ -170,8 +147,7 @@
                     <!-- Blog Section -->
                     <div class="col-md-4 p-1">
                         <div class="section-view view">
-                            <img src="dist/img/imagenes/c5.jpeg"
-                                class="section-view__img">
+                            <img src="dist/img/imagenes/c5.jpeg" class="section-view__img">
                             <div class="mask p-4 flex-center flex-column rgba-black-strong">
                                 <h3 class="section-view__mask-h3 pb-1 white-text text-center">Blog</h3>
                                 <a href="#blog" class="btn btn--yellow s-border--dark text-dark"><span>Mas
@@ -201,7 +177,7 @@
         <!-- Blockquote -->
         <section class="o-section bg-light">
             <div class="o-section-container">
-                <blockquote class="blockquote pb-4">
+                <blockquote data-aos="fadeIn" data-aos-duration="2000" class="blockquote pb-4">
                     <p class="mb-0 text-weight-bold ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                         posuere erat a ante.
                     </p>
@@ -218,7 +194,8 @@
             <div class="o-section-container">
                 <h2 class="o-section__h2 fuente-3">Quienes Somos</h2>
                 <hr class="o-line s-background-tertiary w-50">
-                <p class="mb-5 lead text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem dolor, sapiente
+                <p class="mb-5 lead text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem
+                    dolor, sapiente
                     natus iure autem ut veritatis ficiis eveniet adipisci ratione cum vero quidem inventore corrupti
                     culpa vel voluptatum hic consequuntur laboriosam illum. Delectus, resentium. Necessitatibus alias
                     neque suscipit fuga optio totam. Voluptas veniam, velit autem asperiores sit esse. Similique.</p>
@@ -232,49 +209,65 @@
                 <div class="o-section-container">
                     <h3 class="o-section__h3">Nuestro Talento</h3>
                     <hr class="o-line s-background-tertiary w-25">
-                    <p class="lead mb-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero magnam natus totam perspiciatis aperiam laborum? Non voluptatum unde porro accusantium iusto pariatur laborum dolores assumenda mollitia quisquam ex rem, eos fuga sequi at nisi nostrum quo odit animi sit expedita placeat nihil. Reiciendis labore similique nobis illum, voluptas dolorum nemo.</p>
-                
+                    <p class="lead mb-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                        magnam natus totam perspiciatis aperiam laborum? Non voluptatum unde porro accusantium iusto
+                        pariatur laborum dolores assumenda mollitia quisquam ex rem, eos fuga sequi at nisi nostrum quo
+                        odit animi sit expedita placeat nihil. Reiciendis labore similique nobis illum, voluptas dolorum
+                        nemo.</p>
+
                     <div class="container-fluid">
                         <!-- Personal -->
                         <div class="row text-center mt-5">
-                    
+
                             <div class="col-md-6 col-lg-3 mb-5">
                                 <div class="o-card card">
-                                    <img class="card-img-top rounded-circle mt-5 mb-3" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="">
+                                    <img class="card-img-top rounded-circle mt-5 mb-3"
+                                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="">
                                     <div class="card-body">
                                         <h4 class="card-title">Title</h4>
-                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores animi ipsum optio provident!</p>
+                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit
+                                            amet consectetur adipisicing elit. Alias asperiores animi ipsum optio
+                                            provident!</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 mt-5 mt-md-0 mb-5">
                                 <div class="o-card card">
-                                    <img class="card-img-top rounded-circle mt-5 mb-3" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" alt="">
+                                    <img class="card-img-top rounded-circle mt-5 mb-3"
+                                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" alt="">
                                     <div class="card-body">
                                         <h4 class="card-title">Title</h4>
-                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores animi ipsum optio provident!</p>
+                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit
+                                            amet consectetur adipisicing elit. Alias asperiores animi ipsum optio
+                                            provident!</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 mt-5 mt-md-0 mb-5">
                                 <div class="o-card card">
-                                    <img class="card-img-top rounded-circle mt-5 mb-3" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="">
+                                    <img class="card-img-top rounded-circle mt-5 mb-3"
+                                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="">
                                     <div class="card-body">
                                         <h4 class="card-title">Title</h4>
-                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores animi ipsum optio provident!</p>
+                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit
+                                            amet consectetur adipisicing elit. Alias asperiores animi ipsum optio
+                                            provident!</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 mt-5 mt-md-0 mb-5">
                                 <div class="o-card card">
-                                    <img class="card-img-top rounded-circle mt-5 mb-3" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="">
+                                    <img class="card-img-top rounded-circle mt-5 mb-3"
+                                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="">
                                     <div class="card-body">
                                         <h4 class="card-title">Title</h4>
-                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores animi ipsum optio provident!</p>
+                                        <p class="card-text text-justify p-2 p-md-3 white-text">Lorem, ipsum dolor sit
+                                            amet consectetur adipisicing elit. Alias asperiores animi ipsum optio
+                                            provident!</p>
                                     </div>
                                 </div>
                             </div>
-                    
+
                         </div>
                         <!-- Personal -->
                     </div>
@@ -421,10 +414,14 @@
 
                 <!-- Section heading -->
                 <h2 class="o-section__h2 text-center">Nuestro rincón de lectura</h2>
-                <hr class="o-line w-50 s-background-tertiary mx-auto mb-5"></hr>
-                
+                <hr class="o-line w-50 s-background-tertiary mx-auto mb-5">
+                </hr>
+
                 <!-- Section description -->
-                <p data-aos="fade-left" data-aos-duration="1500" class="text-center w-responsive mx-auto mb-5 lead white-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla riatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p data-aos="fade-left" data-aos-duration="1500"
+                    class="text-center w-responsive mx-auto mb-5 lead white-text">Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla riatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <!-- Articulo -->
                 <div class="container">
@@ -488,7 +485,9 @@
                 <hr class="o-line w-50 s-background-tertiary mr-auto">
 
                 <!--Section description-->
-                <p data-aos="fade-left" data-aos-duration="1500" class="text-center mx-auto mb-5 lead px-5 white-text">¿Tiene usted alguna pregunta? Por favor no dude en contactarnos directamente. Nuestro equipo volverá a usted dentro de cuestión de horas para ayudarlo.
+                <p data-aos="fade-left" data-aos-duration="1500" class="text-center mx-auto mb-5 lead px-5 white-text">
+                    ¿Tiene usted alguna pregunta? Por favor no dude en contactarnos directamente. Nuestro equipo volverá
+                    a usted dentro de cuestión de horas para ayudarlo.
                 </p>
 
                 <!-- Contenido -->
@@ -496,7 +495,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <!-- Formulario -->
-                            <div class="col-md-12 col-lg-9 px-4 py-5 blue-gradient">
+                            <div class="col-md-12 col-lg-8 px-4 py-5 blue-gradient">
                                 <div class="">
                                     <!-- Titulo -->
                                     <h3 class="o-section__h3 fuente-3">Formulario</h3>
@@ -556,8 +555,8 @@
                             <!-- ./Formulario -->
 
                             <!-- Info -->
-                            <div class="col-md-12 col-lg-3 s-primary-darken-4 text-center mt-5 mt-lg-0 py-5">
-                                <div class="flex-center flex-column white-text">
+                            <div class="col-md-12 col-lg-4 s-primary-darken-4 text-center mt-5 mt-lg-0 py-5">
+                                <div data-aos="flip-left" class="flex-center flex-column white-text">
                                     <h3 class="o-section__h3 fuente-3"></h3>
                                     <br>
                                     <div class="mb-4">

@@ -42,33 +42,16 @@
             height: $navbar-nav-height-xl
             padding: $navbar-padding-xl
     &__img
-        width: 250px
+        width: $navbar__img-width
+        padding: 0
         @media screen and (min-width: 576px)
-            width: 250px
+            width: $navbar__img-width-sm
         @media screen and (min-width: 768px)
-            width: 330px
+            width: $navbar__img-width-md
         @media screen and (min-width: 1024px)
-            width: 330px
+            width: $navbar__img-width-lg
         @media screen and (min-width: 1280px)
-            width: 330px
-            margin-left: 50px
-    &__social-icons
-        font-size: $navbar-social-icons-font-size
-        color: $navbar-social-icons-color
-        margin: 100px auto
-        @media screen and (min-width: 576px)
-            font-size: $navbar-social-icons-font-size-sm
-            color: $navbar-social-icons-color-sm
-        @media screen and (min-width: 768px)
-            font-size: $navbar-social-icons-font-size-md
-            color: $navbar-social-icons-color-md
-        @media screen and (min-width: 1024px)
-            font-size: $navbar-social-icons-font-size-lg
-            color: $navbar-social-icons-color-lg
-        @media screen and (min-width: 1240px)
-            font-size: $navbar-social-icons-font-size-xl
-            color: $navbar-social-icons-color-xl
-.nav
+            width: $navbar__img-width-xl
     &-item 
         margin: $nav-item-margin
         text-align: center
