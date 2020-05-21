@@ -55,6 +55,7 @@
     &__social-icons
         font-size: $navbar-social-icons-font-size
         color: $navbar-social-icons-color
+        margin: 100px auto
         @media screen and (min-width: 576px)
             font-size: $navbar-social-icons-font-size-sm
             color: $navbar-social-icons-color-sm
@@ -69,8 +70,9 @@
             color: $navbar-social-icons-color-xl
 .nav
     &-item 
-        margin: auto
+        margin: $nav-item-margin
         text-align: center
+        height: $nav-item-height
     &-link
         color: $nav-link-color
         font-size: $nav-link-font-size
@@ -103,6 +105,5 @@
             background-color: lighten($navbar-nav-background-color, 20%)
 
 a.active
-    padding: 10px
     transition: all 0.6s
     border-bottom: 0.125rem solid yellow

@@ -220,7 +220,7 @@ textarea {
 }
 
 .o-section__h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: #ffffff;
   font-weight: 200;
   font-family: 'Titillium Web', sans-serif;
@@ -228,7 +228,7 @@ textarea {
 }
 
 .o-section__h2 {
-  font-size: 50px;
+  font-size: 1.875rem;
   color: #ffffff;
   font-weight: 600;
   font-family: 'Lato', sans-serif;
@@ -239,7 +239,7 @@ textarea {
 }
 
 .o-section__h3 {
-  font-size: 30px;
+  font-size: 0.9375rem;
   color: #ffffff;
   font-weight: 600;
   font-family: 'Titillium Web', sans-serif;
@@ -248,7 +248,7 @@ textarea {
 }
 
 .o-section__h4 {
-  font-size: 20px;
+  font-size: 0.625rem;
   color: #ffffff;
   font-weight: 600;
   font-family: 'Titillium Web', sans-serif;
@@ -354,7 +354,7 @@ textarea {
 @media screen and (min-width: 576px) {
   .navbar {
     height: auto;
-    padding: 20px;
+    padding: 0;
   }
 }
 
@@ -392,7 +392,7 @@ textarea {
 @media screen and (min-width: 576px) {
   .navbar-nav {
     height: 86vh;
-    padding: 20px;
+    padding: 0;
   }
 }
 
@@ -461,14 +461,15 @@ textarea {
 }
 
 .navbar__social-icons {
-  font-size: 30px;
-  color: #fff800;
+  font-size: 40px;
+  color: #ffffff;
+  margin: 100px auto;
 }
 
 @media screen and (min-width: 576px) {
   .navbar__social-icons {
     font-size: 20px;
-    color: #ffffff;
+    color: #fff800;
   }
 }
 
@@ -494,23 +495,24 @@ textarea {
 }
 
 .nav-item {
-  margin: auto;
+  margin: 0;
   text-align: center;
+  height: 60px;
 }
 
 .nav-link {
   color: #ffffff;
   font-size: 20px;
-  width: 100%;
-  padding: 10px 0;
-  margin: 0;
+  width: 150px;
+  padding: 20px 0;
+  margin: 50px 0;
   text-align: center;
 }
 
 @media screen and (min-width: 576px) {
   .nav-link {
     width: 100%;
-    padding: 30px 0;
+    padding: 0 auto;
     margin: auto;
     font-size: 20px;
   }
@@ -519,7 +521,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .nav-link {
     width: 100%;
-    padding: 10px 0;
+    padding: 0 auto;
     margin: auto;
     font-size: 20px;
   }
@@ -528,7 +530,7 @@ textarea {
 @media screen and (min-width: 1024px) {
   .nav-link {
     width: 130px;
-    padding: 10px auto;
+    padding: 0 auto;
     margin: auto;
     font-size: 20px;
   }
@@ -537,7 +539,7 @@ textarea {
 @media screen and (min-width: 1280px) {
   .nav-link {
     width: 100%;
-    padding: 10px auto;
+    padding: 0 auto;
     margin: 0 10px;
     font-size: 1.2em;
   }
@@ -549,7 +551,6 @@ textarea {
 }
 
 a.active {
-  padding: 10px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   border-bottom: 0.125rem solid yellow;

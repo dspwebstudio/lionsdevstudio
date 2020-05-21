@@ -1,22 +1,22 @@
 // THEME COLORS
-$s-color-theme-primary: #0F4480
-// $s-color-theme-primary: #4a148c
-// $s-color-theme-primary: #673ab7
-$s-color-theme-secondary: #0277bd
-$s-color-theme-tertiary: #fff800
+$s-color-theme-primary: #0F4480 //T1
+
+$s-color-theme-secondary: #0277bd //T1
+
+$s-color-theme-tertiary: #fff800 //T1
 
 //============================= BODY  ============================//
 
-// $s-body-background-color: #333
 $s-body-background-color: $s-color-theme-primary
 
 //============================= MAIN  ============================//
 
 $e-main-margin-top: 79px
-$e-main-width: 100vw
+$e-main-width: 100vw 
 $e-main-width-md: 100vw
 $e-main-width-lg: 100vw
-$e-main-width-xl: 75%
+$e-main-width-xl: 75% //T1
+// $e-main-width-xl: 75% //T2
 
 //main colors
 $e-main-background-color: transparent
@@ -24,36 +24,40 @@ $e-main-background-color: transparent
 //============================= NAVBAR  ============================//
 
 // navbar
-$navbar-background-color : #041325
 $navbar-background-color : darken($s-color-theme-primary, 10%)
 $navbar-nav-background-color: transparent
 $navbar-toggler-color : #fff800
 $nav-link-color : #ffffff
-$navbar-social-icons-color: #fff800
+
+$nav-link-font-size: 20px
 
 // navbar (smartphone)
 $navbar-height: auto
 $navbar-padding: 20px
 $navbar-nav-height: 86vh
-$nav-link-font-size: 20px
-$nav-link-width: 100%
-$nav-link-padding: 10px 0
-$nav-link-margin: 0
+$nav-item-height: 60px
+$nav-item-margin: 0
+$nav-link-width: 150px
+$nav-link-padding: 20px 0
 
-$navbar-social-icons-font-size: 30px
-$navbar-social-icons-color: #fff800
+$navbar-social-icons-font-size: 40px
+$navbar-social-icons-color: $nav-link-color
+$navbar-social-icons-margin: 30px 0
+
 
 //navbar small
 $navbar-height-sm: auto
-$navbar-padding-sm: 20px
+$navbar-padding-sm: 0
 $navbar-nav-height-sm: 86vh
 $nav-link-font-size-sm: 20px
 $nav-link-width-sm: 100%
-$nav-link-padding-sm: 30px 0
+$nav-link-padding-sm: 0 auto
 $nav-link-margin-sm: auto 
 
+
 $navbar-social-icons-font-size-sm: 20px
-$navbar-social-icons-color-sm: #ffffff
+$navbar-social-icons-color-sm: $s-color-theme-tertiary
+
 
 //navbar md (tablets)
 $navbar-height-md: auto
@@ -61,11 +65,11 @@ $navbar-padding-md: 20px
 $navbar-nav-height-md: auto
 $nav-link-font-size-md: 20px
 $nav-link-width-md: 100%
-$nav-link-padding-md: 10px 0
+$nav-link-padding-md: 0 auto
 $nav-link-margin-md: auto
 
 $navbar-social-icons-font-size-md: 20px
-$navbar-social-icons-color-md: #ffffff
+$navbar-social-icons-color-md: $navbar-social-icons-color
 
 //navbar lg (laptops)
 $navbar-height-lg: auto
@@ -73,11 +77,11 @@ $navbar-padding-lg: 10px
 $navbar-nav-height-lg: auto
 $nav-link-font-size-lg: 20px
 $nav-link-width-lg: 130px
-$nav-link-padding-lg: 10px auto
+$nav-link-padding-lg: 0 auto
 $nav-link-margin-lg: auto
 
 $navbar-social-icons-font-size-lg: 20px
-$navbar-social-icons-color-lg: #ffffff
+$navbar-social-icons-color-lg: $navbar-social-icons-color
 
 //navbar xl (desktops)
 $navbar-height-xl: auto
@@ -85,11 +89,11 @@ $navbar-padding-xl: 0
 $navbar-nav-height-xl: auto
 $nav-link-font-size-xl: 1.2em
 $nav-link-width-xl: 100%
-$nav-link-padding-xl: 10px auto
+$nav-link-padding-xl: 0 auto
 $nav-link-margin-xl: 0 10px
 
 $navbar-social-icons-font-size-xl: 30px
-$navbar-social-icons-color-xl: #ffffff
+$navbar-social-icons-color-xl: $navbar-social-icons-color
 
 
 
@@ -114,10 +118,10 @@ $o-section__h4-color: #ffffff
 $o-section__h5-color: #ffffff
 $o-section__h6-color: #ffffff
 // titulos - tamaño fuente
-$o-section__h1-font-size: 80px
-$o-section__h2-font-size: 50px
-$o-section__h3-font-size: 30px
-$o-section__h4-font-size: 20px
+$o-section__h1-font-size: 5rem
+$o-section__h2-font-size: 1.875rem
+$o-section__h3-font-size: 0.9375rem
+$o-section__h4-font-size: 0.625rem
 $o-section__h5-font-size: 1rem
 $o-section__h6-font-size: auto
 // titulos - Ancho fuente
