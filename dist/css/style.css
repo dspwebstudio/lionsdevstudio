@@ -112,7 +112,7 @@ main {
 
 @media screen and (min-width: 1240px) {
   main {
-    max-width: 90%;
+    max-width: 87%;
     margin: 5rem auto;
   }
 }
@@ -390,7 +390,7 @@ textarea {
 
 @media screen and (min-width: 1280px) {
   .navbar {
-    height: auto;
+    height: 85px;
     padding: 0;
   }
 }
@@ -401,8 +401,9 @@ textarea {
 
 .navbar-nav {
   background-color: transparent;
-  height: auto;
+  height: 70vh;
   margin: auto;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 576px) {
@@ -472,7 +473,7 @@ textarea {
 
 @media screen and (min-width: 1280px) {
   .navbar__img {
-    width: 250px;
+    width: 350px;
   }
 }
 
@@ -486,7 +487,7 @@ textarea {
   color: #ffffff;
   font-size: 30px;
   width: 150px;
-  padding: 20px 0;
+  padding: 60px 0;
   margin: 30px auto;
   text-align: center;
 }
@@ -522,7 +523,7 @@ textarea {
   .navbar-link {
     width: 100%;
     padding: 0 auto;
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 40px;
   }
 }
@@ -530,6 +531,11 @@ textarea {
 .navbar-link:hover {
   color: #ffffff;
   background-color: rgba(51, 51, 51, 0);
+}
+
+.navbar-social-link {
+  font-size: 25px;
+  color: #ffffff;
 }
 
 a.active {

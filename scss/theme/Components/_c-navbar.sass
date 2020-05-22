@@ -21,10 +21,8 @@
     &-nav
         background-color: $c-navbar-nav-background-color
         height: $c-navbar-nav-height
-        // display: flex
-        // align-items: center
-        // justify-content: center
         margin: auto
+        color: $c-nav-link-color
         @media screen and (min-width: 576px)
             height: $c-navbar-nav-height-sm
             padding: $c-navbar-padding-sm
@@ -86,6 +84,9 @@
         &:hover
             color: $c-nav-link-color
             background-color: lighten($c-navbar-nav-background-color, 20%)
+    &-social-link
+        font-size: 25px
+        color: $c-nav-link-color
 
 a.active
     transition: all 0.6s
