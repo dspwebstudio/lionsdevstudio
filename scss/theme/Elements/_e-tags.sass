@@ -10,13 +10,21 @@ body
 
 main 
     width: $e-main-width
-    margin: $e-main-margin-top auto auto
+    margin: $e-main-margin-top auto
     background-color: $e-main-background-color
     overflow-x: hidden
+    @media screen and ( min-width: 576px)
+        max-width: $e-main-width-sm
+        margin: $e-main-margin-top-sm auto
+    @media screen and ( min-width: 768px)
+        max-width: $e-main-width-md
+        margin: $e-main-margin-top-md auto
     @media screen and ( min-width: 1024px)
         max-width: $e-main-width-lg
+        margin: $e-main-margin-top-lg auto
     @media screen and ( min-width: 1240px)
         max-width: $e-main-width-xl
+        margin: $e-main-margin-top-xl auto
 
 img 
     width: 100%

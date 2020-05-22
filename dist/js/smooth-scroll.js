@@ -19,13 +19,14 @@
 	var defaults = {
 		// Selectors
 		ignore: '[data-scroll-ignore]',
-		header: null,
+		// header: null,
+		header: true,
 		topOnEmptyHash: true,
 
 		// Speed & Easing
 		speed: 4000,
 		clip: true,
-		offset: 81,
+		offset: -40,
 		easing: 'easeInOutCubic',
 		customEasing: null,
 
